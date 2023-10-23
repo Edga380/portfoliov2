@@ -819,6 +819,7 @@ section {
 
     .mob-header-right img{
         max-height: 500px;
+        max-width: 100%;
         position: relative;
         left: 50%;
         transform: translate(-50%);
