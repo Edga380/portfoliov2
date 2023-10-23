@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgaras Aleliunas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="fixed-nav">
+        <!-- Mobile version -->
+        <div class="mob-fix-nav-container">
+            <div class="mob-initials-container">
+                <div id="mob-initials">
+                    <a href="/index.html"><img src="/images/initialslogo.png" alt="initials"></a>
+                </div>
+            </div>
+            <div class="mob-nav-container">
+                <div class="mob-nav-button">
+                    <div class="mob-nav-line"></div>
+                    <div class="mob-nav-line"></div>
+                    <div class="mob-nav-line"></div>
+                </div>
+                <div class="mob-dropdown-menu-container">
+                    <div class="mob-nav-cont-button"><a href="/index.html">Home</a></div>
+                    <div class="mob-nav-cont-button"><a href="/index.html#about-me">About</a></div>
+                    <div class="mob-nav-cont-button" id="mob-projects-button"><a>Projects</a>
+                        <div class="mob-arrow">
+                            <div class="mob-arrow-line"></div>
+                            <div class="mob-arrow-line"></div>
+                        </div>
+                        <div class="mob-sub-dropdown-menu">
+                            <a href="/project.html" onclick="ProjectIndex(0)">Strategy Game</a>
+                            <a href="/project.html" onclick="ProjectIndex(1)">Labyrinth2d</a>
+                            <a href="/project.html" onclick="ProjectIndex(2)">Space Kitty Games</a>
+                            <a href="/project.html" onclick="ProjectIndex(3)">Gallery</a>
+                            <a href="/project.html" onclick="ProjectIndex(4)">Movie Data</a>
+                            <a href="/project.html" onclick="ProjectIndex(5)">Bubble Space Wars</a>
+                        </div>
+                    </div>
+                    <div class="mob-nav-cont-button"><a href="/index.html#contact">Contact</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Descktop version -->
+        <div class="fix-nav-container">
+            <div class="initials-container">
+                <div id="initials">
+                    <img src="/images/initialslogo.png" alt="initials">
+                </div>
+            </div>
+            <div class="nav-container">
+                <div class="nav-cont-button"><a href="/index.html">Home</a></div>
+                <div class="nav-cont-button"><a href="/index.html#about-me">About</a></div>
+                <div class="nav-cont-button"><a href="/projects.html">Projects</a>
+                    <div class="dropdown-menu-container">
+                        <a href="/project.html" onclick="ProjectIndex(0)">Strategy Game</a>
+                        <a href="/project.html" onclick="ProjectIndex(1)">Labyrinth2d</a>
+                        <a href="/project.html" onclick="ProjectIndex(2)">Space Kitty Games</a>
+                        <a href="/project.html" onclick="ProjectIndex(3)">Gallery</a>
+                        <a href="/project.html" onclick="ProjectIndex(4)">Movie Data</a>
+                        <a href="/project.html" onclick="ProjectIndex(5)">Bubble Space Wars</a>
+                        <!-- Max 11 projects -->
+                    </div>
+                </div>
+                <div class="nav-cont-button"><a href="/index.html#contact">Contact</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-socials">
+        <a href="https://www.linkedin.com/in/edgaras-aleliūnas-166b1a238" target="_blank"><img src="/images/linkedinicon.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Edga380" target="_blank"><img src="/images/githubicon.png" alt="GitHub"></a>
+        <a href="https://www.codewars.com/users/Edga380" target="_blank"><img src="/images/codewarsicon.png" alt="CodeWars"></a>
+        <a href="mailto:a.edgaras44@gmail.com" target="_blank"><img src="/images/emailicon.png" alt="Email"></a>
+    </div>
+    <!-- Destination -->
+    <div class="destination">
+        <a href="/index.html">Home</a><span> / </span><a href="/projects.html">Projects</a><span> / </span><a id="project-destination"></a>
+    </div>
+    <!-- Project -->
+    <section>
+        <div class="project-container">
+            <!-- Project name -->
+            <h1 id="project-name"></h1>
+            <div class="project-content">
+                <div class="project-info">
+                    <!-- Project description -->
+                    <p id="project-description"></p>
+                </div>
+                <div id="tech-tags">
+                </div>
+            </div>
+        </div>
+        <div class="project-links">
+            <h1>Links</h1>
+            <!-- Project links list -->
+            <div id="project-links-list">
+            </div>
+        </div>
+    </section>
+    <div class="project-slideshow-container">
+        <div id="slideshow-container">
+            <img id="my-slides" src="">
+            <button class="slideshow-button prev-btn" onclick="btnPrevious()"><img src="/images/nextpreviousbutton.png" alt="Next"></button>
+            <button class="slideshow-button next-btn" onclick="btnNext()"><img src="/images/nextpreviousbutton.png" alt="Previous"></button>
+        </div>
+    </div> 
+    <div id="project-next-prev-container">
+    </div> 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <p>a.edgaras44@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/edgaras-aleliūnas-166b1a238" alt="LinkedIn" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/Edga380" alt="GitHub" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.codewars.com/users/Edga380" alt="CodeWars" target="_blank">CodeWars</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/javascript/javascript.js"></script>
+</body>
+</html>

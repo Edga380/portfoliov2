@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgaras Aleliunas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="fixed-nav">
+        <!-- Mobile version -->
+        <div class="mob-fix-nav-container">
+            <div class="mob-initials-container">
+                <div id="mob-initials">
+                    <a href="/index.html"><img src="/images/initialslogo.png" alt="initials"></a>
+                </div>
+            </div>
+            <div class="mob-nav-container">
+                <div class="mob-nav-button">
+                    <div class="mob-nav-line"></div>
+                    <div class="mob-nav-line"></div>
+                    <div class="mob-nav-line"></div>
+                </div>
+                <div class="mob-dropdown-menu-container">
+                    <div class="mob-nav-cont-button"><a href="/index.html">Home</a></div>
+                    <div class="mob-nav-cont-button"><a href="/index.html#about-me">About</a></div>
+                    <div class="mob-nav-cont-button" id="mob-projects-button"><a>Projects</a>
+                        <div class="mob-arrow">
+                            <div class="mob-arrow-line"></div>
+                            <div class="mob-arrow-line"></div>
+                        </div>
+                        <div class="mob-sub-dropdown-menu">
+                            <a href="/project.html" onclick="ProjectIndex(0)">Strategy Game</a>
+                            <a href="/project.html" onclick="ProjectIndex(1)">Labyrinth2d</a>
+                            <a href="/project.html" onclick="ProjectIndex(2)">Space Kitty Games</a>
+                            <a href="/project.html" onclick="ProjectIndex(3)">Gallery</a>
+                            <a href="/project.html" onclick="ProjectIndex(4)">Movie Data</a>
+                            <a href="/project.html" onclick="ProjectIndex(5)">Bubble Space Wars</a>
+                        </div>
+                    </div>
+                    <div class="mob-nav-cont-button"><a href="/index.html#contact">Contact</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Descktop version -->
+        <div class="fix-nav-container">
+            <div class="initials-container">
+                <div id="initials">
+                    <img src="/images/initialslogo.png" alt="initials">
+                </div>
+            </div>
+            <div class="nav-container">
+                <div class="nav-cont-button"><a href="/index.html">Home</a></div>
+                <div class="nav-cont-button"><a href="#about-me">About</a></div>
+                <div class="nav-cont-button"><a href="/projects.html">Projects</a>
+                    <div class="dropdown-menu-container">
+                        <a href="/project.html" onclick="ProjectIndex(0)">Strategy Game</a>
+                        <a href="/project.html" onclick="ProjectIndex(1)">Labyrinth2d</a>
+                        <a href="/project.html" onclick="ProjectIndex(2)">Space Kitty Games</a>
+                        <a href="/project.html" onclick="ProjectIndex(3)">Gallery</a>
+                        <a href="/project.html" onclick="ProjectIndex(4)">Movie Data</a>
+                        <a href="/project.html" onclick="ProjectIndex(5)">Bubble Space Wars</a>
+                        <!-- Max 11 projects -->
+                    </div>
+                </div>
+                <div class="nav-cont-button"><a href="#contact">Contact</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-socials">
+        <a href="https://www.linkedin.com/in/edgaras-aleliūnas-166b1a238" target="_blank"><img src="/images/linkedinicon.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Edga380" target="_blank"><img src="/images/githubicon.png" alt="GitHub"></a>
+        <a href="https://www.codewars.com/users/Edga380" target="_blank"><img src="/images/codewarsicon.png" alt="CodeWars"></a>
+        <a href="mailto:a.edgaras44@gmail.com" target="_blank"><img src="/images/emailicon.png" alt="Email"></a>
+    </div>
+    <!-- Mobile version -->
+    <header class="mobile-header">
+        <div class="mob-header-container">
+            <div class="mob-header-right">
+                <img src="/images/mypicture.png" alt="My picture">
+            </div>
+            <div class="mob-header-left">
+                <h1>Hey, I'm Edgaras</h1>
+                <p>I am a web developer and I am very passionate and dedicated to my work.
+                I have acquired the skills and knowledge necessary to make your project a success.</p>
+                <div class="header-left-buttons">
+                    <div><a href="/projects.html" class="header-left-button">My projects</a></div>
+                    <div><a href="#contact" class="header-left-button">Contact</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Desktop version -->
+    <header class="desktop-header">
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Hey, I'm Edgaras</h1>
+                <p>A software developer that is very passionate and dedicated to his work.
+                I have acquired the skills and knowledge necessary to make your projects a success.</p>
+                <div class="header-left-buttons">
+                    <div><a href="#about-me" class="header-left-button">About me</a></div>
+                    <div><a href="/projects.html" class="header-left-button">My projects</a></div>
+                    <div><a href="#contact" class="header-left-button">Contact</a></div>
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="/images/mypicture.png" alt="My picture">
+            </div>
+        </div>
+    </header>
+    <div id="about-me"></div>
+    <div class="about-me-container-bg">
+        <div class="about-me-container">
+            <div class="about-me-left">
+                <div class="about-me-text">
+                    <h1>About me</h1>
+                    <p>Hello! I'm Edgaras, a self-taught, dedicated and ambitious software developer with a deep passion for technology and a background 
+                        in creating websites and applications during my spare time. I have honed my skills through self-learning 
+                        and hands-on projects, driven by my fascination for software development. I am enthusiastic about leveraging 
+                        my creativity and technical abilities to build innovative solutions and contribute meaningfully to the world 
+                        of software development.</p>
+                    <h2>My passion</h2>
+                        <p>The passion and excitement for coding comes from solving problems, embracing challenges, and constantly 
+                        learning. During my learning journey, I have been working on projects that enhanced my skills in 
+                        javascript, algorithm, html, css. I thrive in collaborative environments, where I can contribute my 
+                        innovative ideas and absorb knowledge from experienced professionals.</p>
+                    <h2>My goal</h2>
+                        <p>My goal is to apply my technical skills and creativity in a professional setting, where I can contribute to building 
+                        cutting-edge software solutions. I am seeking a challenging and rewarding opportunity to kick-start my career, 
+                        where I can grow both professionally and personally while making a meaningful impact through my work.</p>
+
+                        <p>Thank you for considering my application. I am enthusiastic about the possibility of working with a forward-thinking team 
+                        where I can learn, innovate, and contribute significantly. Let's create something remarkable together!</p>
+                    </p>
+                </div>
+            </div>
+            <div class="about-me-right">
+                <h1>Skills</h1>
+                <div class="technologies-learned">
+                    <img src="/images/technologiesicons/jsicon.png" alt="javascript">
+                    <img src="/images/technologiesicons/htmlicon.png" alt="hytml">
+                    <img src="/images/technologiesicons/cssicon.png" alt="css">
+                    <img src="/images/technologiesicons/csharpicon.png" alt="csharp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects-title">
+        <h1>My Projects</h1>
+    </div>
+    <div class="projects">
+        <div class="card-container">
+            <!-- 1 -->
+            <div class="card small-project-card">
+                <div class="image-container">
+                    <img src="/images/strategyGame/strategyGame01.png" alt="Strategy Game">
+                </div>
+                <div class="card-content">
+                    <h2>Strategy Game</h2>
+                    <p>Earth needs more resources to sustain mankind. </p>
+                    <a href="/project.html" onclick="ProjectIndex(0)" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="card large-project-card">
+                <div class="image-container">
+                    <img src="/images/labyrinth2d/labyrinth2d01.png" alt="Labyrinth2d">
+                </div>
+                <div class="card-content">
+                    <h2>Labyrinth2d</h2>
+                    <p>Like the name suggests it is a labyrinth game where the goal is to pass 10 
+                        unique labyrinths in a total of 5 minutes time limit.</p>
+                    <a href="/project.html" onclick="ProjectIndex(1)" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="card large-project-card">
+                <div class="image-container">
+                    <img src="/images/skGames/skGames01.png" alt="Space Kitty Games">
+                </div>
+                <div class="card-content">
+                    <h2>Space Kitty Games</h2>
+                    <p>I independently worked on the website design/images/html/css/javascript and was 
+                        able to learn the processes of how to put together a website.</p>
+                    <a href="/project.html" onclick="ProjectIndex(2)" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="card small-project-card">
+                <div class="image-container">
+                    <img src="/images/gallery/gallery01.png" alt="Gallery">
+                </div>
+                <div class="card-content">
+                    <h2>Gallery</h2>
+                    <p>This project displays images in an organized manner.</p>
+                    <a href="/project.html" onclick="ProjectIndex(3)" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </div>
+    <div class="more-projects-button">
+        <a href="/projects.html">More projects</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <div class="contact-info">
+                    <h3 id="contact">Contact</h3>
+                    <p>a.edgaras44@gmail.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/edgaras-aleliūnas-166b1a238" alt="LinkedIn" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/Edga380" alt="GitHub" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.codewars.com/users/Edga380" alt="CodeWars" target="_blank">CodeWars</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/javascript/javascript.js"></script>
+</body>
+</html>

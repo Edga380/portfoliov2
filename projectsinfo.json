@@ -1,0 +1,145 @@
+[
+    {
+        "name": "Strategy Game",
+        "description": [
+            "Earth needs more resources to sustain mankind. After finding a planet with",
+            "a lot of it they think their problems are solved. While building a new base",
+            "on the planet and harvesting its resources they encounter a species that have",
+            "been harvesting it too, so the fight for resources begins."
+        ],
+        "techTags": [
+            ["/images/technologiesicons/jsicon.png", "99.2"],
+            ["/images/technologiesicons/othericon.png", "0.8"]
+        ],
+        "links": [
+            ["GitHub Pages", "https://edga380.github.io/strategygame/"],
+            ["GitHub Repository", "https://github.com/Edga380/strategygame"]
+        ],
+        "slideShowImg": [
+            "/images/strategyGame/strategyGame01.png",
+            "/images/strategyGame/strategyGame02.png",
+            "/images/strategyGame/strategyGame03.png",
+            "/images/strategyGame/strategyGame04.png"
+        ]
+    },
+
+    {
+        "name": "Labyrinth2d",
+        "description": [
+            "After developing 'Bubble Space Wars' I decided that I wanted to ",
+            "develop a game from scratch mostly using JavaScript to challenge ",
+            "myself rather than using Unity. That is how Labyrinth2d came to life. ",
+            "Like the name suggests it is a labyrinth game where the goal is to ",
+            "pass 10 unique labyrinths in a total of 5 minutes time limit."
+        ],
+        "techTags": [
+            ["/images/technologiesicons/jsicon.png", "63.1"],
+            ["/images/technologiesicons/cssicon.png", "30.4"],
+            ["/images/technologiesicons/htmlicon.png", "6.5"]
+        ],
+        "links": [
+            ["GitHub Pages", "https://edga380.github.io/labyrinth2d/"],
+            ["GitHub Repository", "https://github.com/Edga380/labyrinth2d"]
+        ],
+        "slideShowImg": [
+            "/images/labyrinth2d/labyrinth2d01.png",
+            "/images/labyrinth2d/labyrinth2d02.png",
+            "/images/labyrinth2d/labyrinth2d03.png",
+            "/images/labyrinth2d/labyrinth2d04.png"
+        ]
+    },
+
+    {
+        "name": "Space Kitty Games",
+        "description": [
+            "I independently worked on the website design/images/html/css/javascript and was able to ",
+            "learn the processes of how to put together a website. I developed this website to showcase my games and ",
+            "provide a snapshot of what the games look like."
+        ],
+        "techTags": [
+            ["/images/technologiesicons/jsicon.png", "56.7"],
+            ["/images/technologiesicons/cssicon.png", "25.6"],
+            ["/images/technologiesicons/htmlicon.png", "17.7"]
+        ],
+        "links": [
+            ["GitHub Pages", "https://edga380.github.io/hobbypage/index.html"],
+            ["GitHub Repository", "https://github.com/Edga380/hobbypage"]
+        ],
+        "slideShowImg": [
+            "/images/skGames/skGames01.png",
+            "/images/skGames/skGames02.png",
+            "/images/skGames/skGames03.png",
+            "/images/skGames/skGames04.png"
+        ]
+    },
+
+    {
+        "name": "Gallery",
+        "description": [
+            "This project displays images in an organized manner."
+        ],
+        "techTags": [
+            ["/images/technologiesicons/jsicon.png", "53.2"],
+            ["/images/technologiesicons/cssicon.png", "36.7"],
+            ["/images/technologiesicons/htmlicon.png", "10.1"]
+        ],
+        "links": [
+            ["GitHub Pages", "https://edga380.github.io/projectgallery/"],
+            ["GitHub Repository", "https://github.com/Edga380/projectgallery"]
+        ],
+        "slideShowImg": [
+            "/images/gallery/gallery01.png",
+            "/images/gallery/gallery02.png",
+            "/images/gallery/gallery03.png",
+            "/images/gallery/gallery04.png"
+        ]
+    },
+
+    {
+        "name": "Movie Data",
+        "description": [
+            "Movie data is automatically read by the code and displayed on the screen as a card."
+        ],
+        "techTags": [
+            ["/images/technologiesicons/jsicon.png", "59.2"],
+            ["/images/technologiesicons/cssicon.png", "23.8"],
+            ["/images/technologiesicons/htmlicon.png", "17"]
+        ],
+        "links": [
+            ["GitHub Pages", "https://edga380.github.io/moviedata/"],
+            ["GitHub Repository", "https://github.com/Edga380/moviedata"]
+        ],
+        "slideShowImg": [
+            "/images/movieData/movieData01.png",
+            "/images/movieData/movieData02.png",
+            "/images/movieData/movieData03.png",
+            "/images/movieData/movieData04.png"
+        ]
+    },
+
+    {
+        "name": "Bubble Space Wars",
+        "description": [
+            "Bubble Space Wars is an Android mobile game that I created using Unity engine. ",
+            "The aim of the game is that you need to destroy bubbles that comes in waves and climb up the leaderboard. ",
+            "There are two modes for the player to choose from. ",
+            "'Normal mode' is where you need to survive 3 waves of bubbles and at the end of every 4 levels ",
+            "you need to defeat a bubble boss. There are 10 different types of bosses and all of them have different attacks. ",
+            "The alternative game mode is called 'Survival mode' where you need to survive as long as possible. ",
+            "You will need to survive waves of bubbles and bosses. Your scores are displayed on leaderboards for both game modes ",
+            "so you can see how you stack up against other players."
+        ],
+        "techTags": [
+        ["/images/technologiesicons/csharpicon.png", "100"]
+        ],
+        "links": [
+            ["Google Play", "https://play.google.com/store/apps/details?id=com.None.BubbleSpaceWars"]
+        ],
+        "slideShowImg": [
+            "/images/bubblespacewars/bubbleSpaceWars01.png",
+            "/images/bubblespacewars/bubbleSpaceWars02.png",
+            "/images/bubblespacewars/bubbleSpaceWars03.png",
+            "/images/bubblespacewars/bubbleSpaceWars04.png"
+        ]
+    }
+]
