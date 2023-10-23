@@ -13,7 +13,7 @@ function NextPreviousProject(num){
 // Project page populate with information from json file
 let projectIndex = localStorage.getItem("index");
 let projectImages;
-fetch('../projectsinfo.json')
+fetch('/projectsinfo.json')
     .then(response => response.json())
     .then(data => {
         if(document.getElementById("project-destination") != null){
