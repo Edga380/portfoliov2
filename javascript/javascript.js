@@ -1,13 +1,13 @@
 //
 function ProjectIndex(index){
     localStorage.setItem("index", index);
-    window.location.href = "project.html"
+    window.location.href = "./project.html"
 };
 
 // Next previous project
 function NextPreviousProject(num){
     localStorage.setItem("index", parseInt(localStorage.getItem("index")) + num);
-    window.location.href = "project.html"
+    window.location.href = "./project.html"
 }
 
 // Project page populate with information from json file
