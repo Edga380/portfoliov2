@@ -16,10 +16,10 @@
             ["GitHub Repository", "https://github.com/Edga380/strategygame"]
         ],
         "slideShowImg": [
-            "/images/strategyGame/strategyGame01.png",
-            "/images/strategyGame/strategyGame02.png",
-            "/images/strategyGame/strategyGame03.png",
-            "/images/strategyGame/strategyGame04.png"
+            "./images/strategyGame/strategyGame01.png",
+            "./images/strategyGame/strategyGame02.png",
+            "./images/strategyGame/strategyGame03.png",
+            "./images/strategyGame/strategyGame04.png"
         ]
     },
 
@@ -42,10 +42,10 @@
             ["GitHub Repository", "https://github.com/Edga380/labyrinth2d"]
         ],
         "slideShowImg": [
-            "/images/labyrinth2d/labyrinth2d01.png",
-            "/images/labyrinth2d/labyrinth2d02.png",
-            "/images/labyrinth2d/labyrinth2d03.png",
-            "/images/labyrinth2d/labyrinth2d04.png"
+            "./images/labyrinth2d/labyrinth2d01.png",
+            "./images/labyrinth2d/labyrinth2d02.png",
+            "./images/labyrinth2d/labyrinth2d03.png",
+            "./images/labyrinth2d/labyrinth2d04.png"
         ]
     },
 
@@ -66,10 +66,10 @@
             ["GitHub Repository", "https://github.com/Edga380/hobbypage"]
         ],
         "slideShowImg": [
-            "/images/skGames/skGames01.png",
-            "/images/skGames/skGames02.png",
-            "/images/skGames/skGames03.png",
-            "/images/skGames/skGames04.png"
+            "./images/skGames/skGames01.png",
+            "./images/skGames/skGames02.png",
+            "./images/skGames/skGames03.png",
+            "./images/skGames/skGames04.png"
         ]
     },
 
@@ -88,10 +88,10 @@
             ["GitHub Repository", "https://github.com/Edga380/projectgallery"]
         ],
         "slideShowImg": [
-            "/images/gallery/gallery01.png",
-            "/images/gallery/gallery02.png",
-            "/images/gallery/gallery03.png",
-            "/images/gallery/gallery04.png"
+            "./images/gallery/gallery01.png",
+            "./images/gallery/gallery02.png",
+            "./images/gallery/gallery03.png",
+            "./images/gallery/gallery04.png"
         ]
     },
 
@@ -110,10 +110,10 @@
             ["GitHub Repository", "https://github.com/Edga380/moviedata"]
         ],
         "slideShowImg": [
-            "/images/movieData/movieData01.png",
-            "/images/movieData/movieData02.png",
-            "/images/movieData/movieData03.png",
-            "/images/movieData/movieData04.png"
+            "./images/movieData/movieData01.png",
+            "./images/movieData/movieData02.png",
+            "./images/movieData/movieData03.png",
+            "./images/movieData/movieData04.png"
         ]
     },
 
@@ -136,10 +136,10 @@
             ["Google Play", "https://play.google.com/store/apps/details?id=com.None.BubbleSpaceWars"]
         ],
         "slideShowImg": [
-            "/images/bubblespacewars/bubbleSpaceWars01.png",
-            "/images/bubblespacewars/bubbleSpaceWars02.png",
-            "/images/bubblespacewars/bubbleSpaceWars03.png",
-            "/images/bubblespacewars/bubbleSpaceWars04.png"
+            "./images/bubblespacewars/bubbleSpaceWars01.png",
+            "./images/bubblespacewars/bubbleSpaceWars02.png",
+            "./images/bubblespacewars/bubbleSpaceWars03.png",
+            "./images/bubblespacewars/bubbleSpaceWars04.png"
         ]
     }
 ]
