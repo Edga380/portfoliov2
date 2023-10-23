@@ -22,7 +22,7 @@ fetch('/projectsinfo.json')
             document.getElementById("project-name").innerText = data[projectIndex].name;
             document.getElementById("project-description").innerText = data[projectIndex].description.join('');
             for (let i = 0; i < data[projectIndex].techTags.length; i++) {
-                document.getElementById("tech-tags").insertAdjacentHTML('beforeend', '<div class="tag"><img src="' + data[projectIndex].techTags[i][0] +'" alt="javascript"><p>' + data[projectIndex].techTags[i][1] +'%</p></div>');
+                document.getElementById("tech-tags").insertAdjacentHTML('beforeend', '<div class="tag"><img src=".' + data[projectIndex].techTags[i][0] +'"><p>' + data[projectIndex].techTags[i][1] +'%</p></div>');
             }
             for (let i = 0; i < data[projectIndex].links.length; i++) {
                 document.getElementById("project-links-list").insertAdjacentHTML('beforeend', '<ul><a href="' + data[projectIndex].links[i][1] + '" target="_blank">' + data[projectIndex].links[i][0] + '</a></ul>');
