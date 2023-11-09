@@ -1,50 +1,62 @@
+:root {
+    --background-color: rgb(30, 30, 30);
+    --section-background-color: rgb(40, 40, 40);
+    --highlights: rgb(22, 177,181);
+    --text: rgb(230, 230, 230);
+    --burgandy-buttons: rgb(40, 0, 0);
+    --project-name-font-size-2rem: 2rem;
+    --project-name-font-family: Arial, Helvetica, sans-serif;
+    --text-decoration-underline-dashed: underline dashed;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-color: #343434;
+    background-color: var(--background-color);
 }
 
 a {
-    color: white;
+    color: var(--text);
     font-family:sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 p {
-    color: white;
+    color: var(--text);
     font-family:sans-serif;
+    font-size: 18px;
 }
 
 h1 {
-    color: #16b1b5;
-    text-decoration: underline dashed;
+    color: var(--highlights);
+    text-decoration: var(--text-decoration-underline-dashed);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    color: white;
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
-    color: white;
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
-    color: white;
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #fixed-nav {
-    background-color: #424242;
+    background-color: var(--section-background-color);
     position: fixed;
     top: 0;
     height: 80px;
     width: 100%;
     bottom: 100px;
     z-index: 5;
-    border-bottom: dashed 2px #16b1b5;
+    border-bottom: dashed 2px var(--highlights);
 }
 
 .fix-nav-container {
@@ -88,12 +100,12 @@ ul {
 }
 
 .nav-cont-button a:hover {
-    color: #16b1b5;
+    color: var(--highlights);
     cursor: pointer;
 }
 
 .dropdown-menu-container {
-    background-color: #424242;
+    background-color: var(--section-background-color);
     display: flex;
     flex-wrap: wrap;
     max-height: 0;
@@ -109,17 +121,19 @@ ul {
 }
 
 .dropdown-menu-container a {
-    margin: 5px 0px 5px 0px;
-    padding: 0px 30px 0px 30px;
-    border: dashed 1px #16b1b5;
+    margin: 0.3rem 0 0.3rem 0.5rem;
+    padding: 0 1rem 0 1rem;
+    border: dashed 1px var(--highlights);
     transition: all 0.3s ease-in-out;
+    font-size: 1rem;
 }
 
 .dropdown-menu-container a:hover {
-    border: dashed 1px white;
+    border: dashed 1px var(--text);
 }
 
-.nav-cont-button:hover .dropdown-menu-container {
+.nav-cont-button:hover .dropdown-menu-container,
+.nav-cont-button:focus .dropdown-menu-container {
     max-height: 390px;
 }
 
@@ -137,7 +151,7 @@ ul {
 }
 
 .fixed-socials img {
-    background-color: #424242;
+    background-color: var(--section-background-color);
     border-radius: 10px;
     max-width: 40px;
     transition: scale 0.1s ease-in-out;
@@ -169,7 +183,7 @@ header {
 }
 
 .header-left h1 {
-    color: #16b1b5;
+    color: var(--highlights);
     width: 70%;
     position: relative;
     left: 50%;
@@ -196,7 +210,7 @@ header {
 }
 
 .header-left-button {
-    background-color: #a2a2a2;
+    background-color: var(--burgandy-buttons);
     margin: 5px;
     border-radius: 5px;
     padding: 15px;
@@ -205,7 +219,7 @@ header {
 }
 
 .header-left-button:hover {
-    background-color: #16b1b5;
+    background-color: var(--highlights);
     cursor: pointer;
 }
 
@@ -232,7 +246,7 @@ header {
 }
 
 .about-me-container-bg {
-    background-color: #444444;
+    background-color: var(--section-background-color);
     padding: 40px;
 }
 
@@ -252,16 +266,20 @@ header {
     padding-left: 20px;
 }
 
-.about-me-text h1 {
-    color: #16b1b5;
+.about-me-text h2 {
+    color: var(--highlights);
+    font-size: var(--project-name-font-size-2rem);
+    text-decoration: var(--text-decoration-underline-dashed);
 }
 
 .about-me-right {
     width: 50%;
 }
 
-.about-me-right h1 {
-    color: #16b1b5;
+.about-me-right h2 {
+    color: var(--highlights);
+    font-size: var(--project-name-font-size-2rem);
+    text-decoration: var(--text-decoration-underline-dashed);
     padding-left: 20px;
 }
 
@@ -284,8 +302,10 @@ header {
     text-align: center;
 }
 
-#projects-title h1 {
-    color: #16b1b5;
+#projects-title h2 {
+    color: var(--highlights);
+    font-size: var(--project-name-font-size-2rem);
+    text-decoration: var(--text-decoration-underline-dashed);
 }
 
 .projects {
@@ -321,7 +341,7 @@ header {
 .image-container {
     overflow: hidden;
     border-radius: 30px;
-    border: dashed 2px #16b1b5;
+    border: dashed 2px var(--highlights);
 }
 
 .image-container img {
@@ -341,21 +361,16 @@ header {
     text-align: center;
 }
 
-.card-content h2 {
-    color: #16b1b5;
+.card-content a {
+    color: var(--highlights);
+    text-decoration: var(--text-decoration-underline-dashed);
+    font-size: var(--project-name-font-size-2rem);
+    font-family: var(--project-name-font-family);
+    transition: color 0.3s ease;
 }
 
-.learn-more-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #a2a2a2;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.learn-more-btn:hover {
-    background-color: #16b1b5;
+.card-content a:hover {
+    color: var(--text);
 }
 
 .more-projects-button {
@@ -369,7 +384,7 @@ header {
     display: inline-block;
     padding: 0px 40px;
     margin: 40px;
-    background-color: #a2a2a2;
+    background-color: var(--burgandy-buttons);
     border-radius: 5px;
     transition: background-color 0.3s ease;
     cursor: pointer;
@@ -379,11 +394,12 @@ header {
 }
 
 .more-projects-button a:hover {
-    background-color: #16b1b5;
+    background-color: var(--highlights);
 }
 
+/* Footer section */
 footer {
-    background-color: #444444;
+    background-color: var(--section-background-color);
 }
 
 .footer-container {
@@ -405,7 +421,7 @@ footer {
 }
 
 .contact-info h3, .social-media h3{
-    color: #16b1b5;
+    color: var(--highlights);
 }
 
 .social-media ul {
@@ -423,7 +439,7 @@ footer {
 }
 
 .social-media ul li a:hover {
-    color: #16b1b5;
+    color: var(--highlights);
 }
 
 .destination {
@@ -441,21 +457,21 @@ footer {
 }
 
 .destination span {
-    color: white;
+    color: var(--text);
 }
 
 .destination a:hover {
-    color: #16b1b5;
+    color: var(--highlights);
 }
 
 .destination a:last-child {
-    color: #16b1b5;
+    color: var(--highlights);
 }
 
 /* Project page */
 
 section {
-    background-color: #444444;
+    background-color: var(--section-background-color);
     margin-top: 20px;
 }
 
@@ -466,9 +482,12 @@ section {
     transform: translate(-50%);
 }
 
-.project-container h1 {
+.project-container h2 {
     padding-top: 20px;
     padding-left: 10px;
+    color: var(--highlights);
+    font-size: var(--project-name-font-size-2rem);
+    text-decoration: var(--text-decoration-underline-dashed);
 }
 
 .project-content {
@@ -511,11 +530,14 @@ section {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    border-top: 2px dashed #16b1b5;
+    border-top: 2px dashed var(--highlights);
 }
 
-.project-links h1 {
+.project-links h2 {
     margin-left: 10px;
+    color: var(--highlights);
+    font-size: var(--project-name-font-size-2rem);
+    text-decoration: var(--text-decoration-underline-dashed);
 }
 
 #project-links-list {
@@ -525,7 +547,7 @@ section {
 
 #project-links-list ul {
     padding: 10px 50px 10px 50px;
-    border-right: 1px solid #16b1b5;
+    border-right: 1px solid var(--highlights);
 }
 
 #project-links-list a {
@@ -534,7 +556,7 @@ section {
 }
 
 #project-links-list a:hover {
-    color: #16b1b5;
+    color: var(--highlights);
 }
 
 .project-slideshow-container {
@@ -545,18 +567,33 @@ section {
     margin-bottom: 60px;
 }
 
-#my-slides {
+.my-slide-image {
+    display: none;
     position: relative;
     left: 50%;
     transform: translate(-50%);
     margin-top: 30px;
     max-width: 85%;
-    border: dashed 2px #16b1b5;
+    border: dashed 2px var(--highlights);
+}
+
+.my-slide-image.active {
+    display: flex;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .slideshow-button {
-    background-color: rgba(22, 177, 181, 0.5);
-    color: white;
+    background-color: var(--highlights);
+    color: var(--text);
     position: absolute;
     top: 50%;
     width: 50px;
@@ -614,13 +651,13 @@ section {
     width: 100px;
     text-align: center;
     margin-bottom: 10px;
-    border: 1px dashed #16b1b5;
+    border: 1px dashed var(--highlights);
     transition: color 0.3s ease, border 0.3s ease;
 }
 
 #project-next-prev-container a:hover {
     color: #16b1b5;
-    border: 1px dashed white;
+    border: 1px dashed var(--text);
     cursor: pointer;
 }
 
@@ -629,14 +666,14 @@ section {
 
 @media (max-width: 767px) {
     #fixed-nav {
-        background-color: #424242;
+        background-color: var(--section-background-color);
         position: fixed;
         top: 0;
         height: 50px;
         width: 100%;
         bottom: 100px;
         z-index: 5;
-        border-bottom: dashed 2px #16b1b5;
+        border-bottom: dashed 2px var(--highlights);
     }
     
     .fix-nav-container {
@@ -668,7 +705,7 @@ section {
         margin: 10px;
         height: 30px;
         width: 30px;
-        border: dashed 1px #16b1b5;
+        border: dashed 1px var(--highlights);
     }
 
     .mob-nav-button:hover {
@@ -692,7 +729,7 @@ section {
     }
 
     .mob-nav-line {
-        background-color: #16b1b5;
+        background-color: var(--highlights);
         margin: 5px;
         height: 3px;
         width: 70%;
@@ -700,7 +737,7 @@ section {
     }
     
     .mob-dropdown-menu-container {
-        background-color: #424242;
+        background-color: var(--section-background-color);
         width: 0px;
         position: absolute;
         right: 0px;
@@ -725,14 +762,14 @@ section {
 
     .mob-nav-cont-button a {
         padding: 5px 50px 5px 50px;
-        border: dashed 1px #16b1b5;
+        border: dashed 1px var(--highlights);
         text-decoration: none;
         transition: border 0.3s ease, color 0.3s ease;
     }
 
     .mob-nav-cont-button a:hover {
-        border: dashed 1px white;
-        color: #16b1b5;
+        border: dashed 1px var(--text);
+        color: var(--highlights);
     }
 
     .mob-sub-dropdown-menu {
@@ -769,7 +806,7 @@ section {
     }
     
     .mob-arrow-line:nth-child(1) {
-        background-color: white;
+        background-color: var(--text);
         width: 10px;
         height: 2px;
         position: absolute;
@@ -780,7 +817,7 @@ section {
     }
     
     .mob-arrow-line:nth-child(2) {
-        background-color: white;
+        background-color: var(--text);
         width: 10px;
         height: 2px;
         position: absolute;

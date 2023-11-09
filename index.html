@@ -12,7 +12,7 @@
         <div class="mob-fix-nav-container">
             <div class="mob-initials-container">
                 <div id="mob-initials">
-                    <a href="./index.html"><img src="./images/initialslogo.png" alt="initials"></a>
+                    <a href="./index.html#fixed-nav"><img src="./images/initialslogo.png" alt="initials"></a>
                 </div>
             </div>
             <div class="mob-nav-container">
@@ -22,8 +22,8 @@
                     <div class="mob-nav-line"></div>
                 </div>
                 <div class="mob-dropdown-menu-container">
-                    <div class="mob-nav-cont-button"><a href="./index.html">Home</a></div>
-                    <div class="mob-nav-cont-button"><a href="./index.html#about-me">About</a></div>
+                    <div class="mob-nav-cont-button"><a href="#fixed-nav">Home</a></div>
+                    <div class="mob-nav-cont-button"><a href="#about-me">About</a></div>
                     <div class="mob-nav-cont-button" id="mob-projects-button"><a>Projects</a>
                         <div class="mob-arrow">
                             <div class="mob-arrow-line"></div>
@@ -38,7 +38,7 @@
                             <a href="./project.html" onclick="ProjectIndex(5)">Bubble Space Wars</a>
                         </div>
                     </div>
-                    <div class="mob-nav-cont-button"><a href="./index.html#contact">Contact</a></div>
+                    <div class="mob-nav-cont-button"><a href="#footer">Contact</a></div>
                 </div>
             </div>
         </div>
@@ -50,9 +50,9 @@
                 </div>
             </div>
             <div class="nav-container">
-                <div class="nav-cont-button"><a href="./index.html">Home</a></div>
-                <div class="nav-cont-button"><a href=".#about-me">About</a></div>
-                <div class="nav-cont-button"><a href="./projects.html">Projects</a>
+                <div class="nav-cont-button"><a href="#fixed-nav">Home</a></div>
+                <div class="nav-cont-button"><a href="#about-me">About</a></div>
+                <div class="nav-cont-button"><a href="#projects-title" tabindex="0">Projects</a>
                     <div class="dropdown-menu-container">
                         <a href="./project.html" onclick="ProjectIndex(0)">Strategy Game</a>
                         <a href="./project.html" onclick="ProjectIndex(1)">Labyrinth2d</a>
@@ -63,7 +63,7 @@
                         <!-- Max 11 projects -->
                     </div>
                 </div>
-                <div class="nav-cont-button"><a href=".#contact">Contact</a></div>
+                <div class="nav-cont-button"><a href="#footer">Contact</a></div>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
         <div class="about-me-container">
             <div class="about-me-left">
                 <div class="about-me-text">
-                    <h1>About me</h1>
+                    <h2>About me</h2>
                     <p>Hello! I'm Edgaras, a dedicated and ambitious software developer with a deep passion for technology and a background 
                         in creating websites and applications during my spare time. I have honed my skills through self-learning 
                         and hands-on projects, driven by my fascination for software development. I am enthusiastic about leveraging 
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div class="about-me-right">
-                <h1>Skills</h1>
+                <h2>Skills</h2>
                 <div class="technologies-learned">
                     <img src="./images/technologiesicons/jsicon.png" alt="javascript">
                     <img src="./images/technologiesicons/htmlicon.png" alt="hytml">
@@ -146,7 +146,7 @@
     </div>
     <!-- Projects -->
     <div id="projects-title">
-        <h1>My Projects</h1>
+        <h2>My Projects</h2>
     </div>
     <div class="projects">
         <div class="card-container">
@@ -156,9 +156,8 @@
                     <img src="./images/strategyGame/strategyGame01.png" alt="Strategy Game">
                 </div>
                 <div class="card-content">
-                    <h2>Strategy Game</h2>
+                    <a href="./project.html" onclick="ProjectIndex(0)" aria-label="Strategy Game">Strategy Game</a>
                     <p>Earth needs more resources to sustain mankind. </p>
-                    <a href="./project.html" onclick="ProjectIndex(0)" class="learn-more-btn">Learn More</a>
                 </div>
             </div>
             <!-- 2 -->
@@ -167,10 +166,9 @@
                     <img src="./images/labyrinth2d/labyrinth2d01.png" alt="Labyrinth2d">
                 </div>
                 <div class="card-content">
-                    <h2>Labyrinth2d</h2>
+                    <a href="./project.html" onclick="ProjectIndex(1)" aria-label="Labyrinth2d">Labyrinth2d</a>
                     <p>Like the name suggests it is a labyrinth game where the goal is to pass 10 
                         unique labyrinths in a total of 5 minutes time limit.</p>
-                    <a href="./project.html" onclick="ProjectIndex(1)" class="learn-more-btn">Learn More</a>
                 </div>
             </div>
             <!-- 3 -->
@@ -179,10 +177,9 @@
                     <img src="./images/skGames/skGames01.png" alt="Space Kitty Games">
                 </div>
                 <div class="card-content">
-                    <h2>Space Kitty Games</h2>
+                    <a href="./project.html" onclick="ProjectIndex(2)" aria-label="Space Kitty Games">Space Kitty Games</a>
                     <p>I independently worked on the website design/images/html/css/javascript and was 
                         able to learn the processes of how to put together a website.</p>
-                    <a href="./project.html" onclick="ProjectIndex(2)" class="learn-more-btn">Learn More</a>
                 </div>
             </div>
             <!-- 4 -->
@@ -191,9 +188,8 @@
                     <img src="./images/gallery/gallery01.png" alt="Gallery">
                 </div>
                 <div class="card-content">
-                    <h2>Gallery</h2>
+                    <a href="./project.html" onclick="ProjectIndex(3)" aria-label="Gallery">Gallery</a>
                     <p>This project displays images in an organized manner.</p>
-                    <a href="./project.html" onclick="ProjectIndex(3)" class="learn-more-btn">Learn More</a>
                 </div>
             </div>
             <!-- Add more projects here -->
@@ -203,7 +199,7 @@
         <a href="./projects.html">More projects</a>
     </div>
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="footer-container">
             <div class="container">
                 <div class="contact-info">
