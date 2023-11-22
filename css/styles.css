@@ -95,10 +95,6 @@ ul {
     text-decoration: none;
 }
 
-.nav-cont-button:last-child {
-    margin-left: -30px;
-}
-
 .nav-cont-button a:hover {
     color: var(--highlights);
     cursor: pointer;
@@ -107,22 +103,21 @@ ul {
 .dropdown-menu-container {
     background-color: var(--section-background-color);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     max-height: 0;
     transition: max-height 0.5s ease-in-out;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     margin-top: 1px;
     margin-left: -85px;
-    max-width: 200px;
-    z-index: 5;
+    max-width: auto;
+    z-index: 10;
     line-height: 20px;
-    padding-left: 15px;
 }
 
 .dropdown-menu-container a {
-    margin: 0.3rem 0 0.3rem 0.5rem;
-    padding: 0 1rem 0 1rem;
+    margin: 0.3rem 0.5rem 0.3rem 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border: dashed 1px var(--highlights);
     transition: all 0.3s ease-in-out;
     font-size: 1rem;
@@ -740,36 +735,38 @@ section {
     
     .mob-dropdown-menu-container {
         background-color: var(--section-background-color);
-        width: 0px;
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
         position: absolute;
-        right: 0px;
-        top: 52px;
+        left: 0;
         overflow: hidden;
-        transition: width 0.3s ease-in-out;
+        margin-top: 12px;
+        width: 100%;
+        z-index: 10;
+        line-height: 20px;
+        transition: max-height 0.5s ease-in-out;
     }
     
     .mob-dropdown-menu-container.open {
-        width: 100%;
+        max-height: 800px;
     }
 
     .mob-nav-cont-button {
         text-align: center;
-        padding: 5px 20px 5px 20px;
+        padding: 5px 0px 5px 0px;
+        border: dashed 1px var(--highlights);
         margin: 5px;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        width: 200px;
     }
 
     .mob-nav-cont-button a {
-        padding: 5px 50px 5px 50px;
-        border: dashed 1px var(--highlights);
+        padding: 5px 140px 5px 140px;
         text-decoration: none;
+        text-align: center;
         transition: border 0.3s ease, color 0.3s ease;
     }
 
-    .mob-nav-cont-button a:hover {
+    .mob-nav-cont-button:hover {
         border: dashed 1px var(--text);
         color: var(--highlights);
     }
@@ -777,24 +774,29 @@ section {
     .mob-sub-dropdown-menu {
         display: flex;
         flex-wrap: wrap;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        margin-top: 10px;
-        margin-bottom: -10px;
         overflow: hidden;
-        height: 0px;
-        transition: height 0.3s ease-in-out;
+        position: relative;
+        max-height: 0px;
+        transition: max-height 0.5s ease;
     }
 
     .mob-sub-dropdown-menu.open {
-        margin-bottom: -5px;
-        height: 215px;
+        max-height: 600px;
     }
 
     .mob-sub-dropdown-menu a {
-        margin: 1px;
+        margin: 5px 50px 5px 50px;
+        padding: 5px 20px 5px 20px;
+        border: dashed 1px var(--highlights);
+        text-decoration: none;
+        text-align: center;
+        transition: border 0.3s ease, color 0.3s ease;
         width: 100%;
+    }
+
+    .mob-sub-dropdown-menu a:hover {
+        border: dashed 1px var(--text);
+        color: var(--highlights);
     }
 
     #mob-projects-button:hover {
@@ -803,28 +805,26 @@ section {
 
     .mob-arrow {
         position: absolute;
-        right: 60px;
-        top: 10px;
+        left: 62%;
     }
     
     .mob-arrow-line:nth-child(1) {
         background-color: var(--text);
+        position: absolute;
+        top: -12px;
         width: 10px;
         height: 2px;
-        position: absolute;
-        top: 3px;
-        left: -2px;
         transform: rotate(135deg);
         transition: transform 0.3s ease;
     }
     
     .mob-arrow-line:nth-child(2) {
         background-color: var(--text);
+        position: absolute;
+        top: -12px;
+        left: 6px;
         width: 10px;
         height: 2px;
-        position: absolute;
-        top: 3px;
-        right: -2px;
         transform: rotate(-135deg);
         transition: transform 0.3s ease;
     }
@@ -901,6 +901,14 @@ section {
 
     .fixed-socials {
         top: 70%;
+    }
+
+    .small-project-card {
+        width: 100%;
+    }
+
+    .large-project-card {
+        width: 100%;
     }
 }
 

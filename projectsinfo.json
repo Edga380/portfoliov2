@@ -3,8 +3,8 @@
         "name": "Anime Production Agency",
         "gitHubRepName": "Chibs-Eds-Agency",
         "description": [
-            "Anime Production Agency is a distinguished company specializing in the creation",
-            "of captivating anime series. With a rich history spanning over 20 years, the agency", 
+            "Anime Production Agency is a distinguished company specializing in the creation of captivating anime series.",
+            "With a rich history spanning over 20 years, the agency", 
             "has firmly established itself as a leading force in the anime industry. Renowned for",
             "their commitment to storytelling excellence and top-notch animation, they have become",
             "synonymous with quality and innovation.Earth needs more resources to sustain mankind.", 
@@ -33,9 +33,8 @@
         "name": "Strategy Game",
         "gitHubRepName": "strategygame",
         "description": [
-            "Earth needs more resources to sustain mankind. After finding a planet with",
-            "a lot of it they think their problems are solved. While building a new base",
-            "on the planet and harvesting its resources they encounter a species that have",
+            "Earth needs more resources to sustain mankind. After finding a planet with a lot of it they think their problems are solved.", 
+            "While building a new base on the planet and harvesting its resources they encounter a species that have",
             "been harvesting it too, so the fight for resources begins."
         ],
         "links": [
@@ -54,10 +53,8 @@
         "name": "Labyrinth2d",
         "gitHubRepName": "labyrinth2d",
         "description": [
-            "After developing 'Bubble Space Wars' I decided that I wanted to ",
-            "develop a game from scratch mostly using JavaScript to challenge ",
-            "myself rather than using Unity. That is how Labyrinth2d came to life. ",
-            "Like the name suggests it is a labyrinth game where the goal is to ",
+            "After developing 'Bubble Space Wars' I decided that I wanted to develop a game from scratch mostly using JavaScript to challenge myself rather than using Unity.",
+            "That is how Labyrinth2d came to life. Like the name suggests it is a labyrinth game where the goal is to ",
             "pass 10 unique labyrinths in a total of 5 minutes time limit."
         ],
         "links": [
@@ -76,8 +73,8 @@
         "name": "Space Kitty Games",
         "gitHubRepName": "hobbypage",
         "description": [
-            "I independently worked on the website design/images/html/css/javascript and was able to ",
-            "learn the processes of how to put together a website. I developed this website to showcase my games and ",
+            "I independently worked on the website design/images/html/css/javascript and was able to learn the processes of how to put together a website.", 
+            "I developed this website to showcase my games and ",
             "provide a snapshot of what the games look like."
         ],
         "links": [

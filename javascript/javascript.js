@@ -1,5 +1,3 @@
-const projectsInfoJson = fetch('./projectsinfo.json');
-
 // Smooth scrolling to target
 document.body.addEventListener('click', function (e) {
     if ((e.target.tagName === 'A') && e.target.getAttribute('href') && e.target.getAttribute('href').startsWith('#')) {
@@ -29,7 +27,6 @@ function NextPreviousProject(num){
 }
 
 // Project page populate with information from json file
-
 let projectIndex = localStorage.getItem("index");
 let projectImages;
 // Check if html element exist
@@ -40,7 +37,7 @@ if(document.getElementById('slideshow-container')){
         // SlideShow images
         data[projectIndex].slideShowImg.forEach(image => {
             document.getElementById('slideshow-container').insertAdjacentHTML('beforeend', `
-            <img class="my-slide-image ` + (image === 0 ? 'active' : '') + `" src="` + image + `">`);
+            <img class="my-slide-image ${(image === 0 ? 'active' : '')}" src="${image}">`);
         })
         // 
         projectImages = document.querySelectorAll('.my-slide-image');
@@ -54,7 +51,7 @@ if(document.getElementById('slideshow-container')){
         data[projectIndex].links.forEach(link => {
             document.getElementById("project-links-list").insertAdjacentHTML('beforeend', `
                 <ul>
-                    <a href="` + link[1] + `" target="_blank">` + link[0] + `</a>
+                    <a href="${link[1]}" target="_blank">${link[0]}</a>
                 </ul>`);
         });
         // Insert next/previous buttons
@@ -104,8 +101,8 @@ if(document.getElementById('slideshow-container')){
             gitHubTechTags.forEach(tag => {
                 document.getElementById("tech-tags").insertAdjacentHTML('beforeend', `
                 <div class="tag">
-                    <img src=".` + tag[0] +`">
-                    <p>` + CalculatePercentageOfTotal(tag[1], total).toFixed(1) +`%</p>
+                    <img src="${tag[0]}">
+                    <p>${CalculatePercentageOfTotal(tag[1], total).toFixed(1)}%</p>
                 </div>`)});
         })
         .catch(error => {
@@ -113,8 +110,8 @@ if(document.getElementById('slideshow-container')){
             data[projectIndex].tags.forEach(tag => {
                 document.getElementById("tech-tags").insertAdjacentHTML('beforeend', `
                 <div class="tag">
-                    <img src=".` + tag[0] +`">
-                    <p>` + tag[1] +`%</p>
+                    <img src="${tag[0]}">
+                    <p>${tag[1]}%</p>
                 </div>`)});
         })
     });
@@ -199,9 +196,9 @@ fetch('./projectsinfo.json')
     .then(data => {
         data.forEach((names, i) => {
             subDropdownMenu.insertAdjacentHTML('beforeend', `
-            <a href="./project.html" onclick="ProjectIndex(`+ i +`)">`+ names.name +`</a>`);
+            <a href="./project.html" onclick="ProjectIndex(${i})">${names.name}</a>`);
             document.querySelector(".dropdown-menu-container").insertAdjacentHTML('beforeend', `
-            <a href="./project.html" onclick="ProjectIndex(`+ i +`)">`+ names.name +`</a>`);
+            <a href="./project.html" onclick="ProjectIndex(${i})">${names.name}</a>`);
         });
 });
 
@@ -211,17 +208,26 @@ if(cardContainer){
     fetch('./projectsinfo.json')
         .then(response => response.json())
         .then(data => {
+            // Counter for changing card size
+            let counter = 0;
+            // For loop to insert html elements
             data.forEach((projects, i) => {
+                // Check if you are on /index.html page if yes limit projects that being shown to 4
+                if(window.location.pathname === "/index.html" && i > 3){
+                    return;
+                }
                 cardContainer.insertAdjacentHTML('beforeend', `
-                `+ (i % 2 === 0 ? `<div class="card small-project-card">` : `<div class="card large-project-card">`) +`
+                <div class="card ${(i + counter) % 2 === 0 ? 'large-project-card' : 'small-project-card'}">
                     <div class="image-container">
-                        <img src="`+ projects.slideShowImg[0] +`" alt="`+ projects.name +`">
+                        <img src="${projects.slideShowImg[0]}" alt="${projects.name}">
                     </div>
                     <div class="card-content">
-                        <a href="./project.html" onclick="ProjectIndex(`+ i +`)">`+ projects.name +`</a>
-                        <p>`+ projects.description +`</p>
+                        <a href="./project.html" onclick="ProjectIndex(${i})">${projects.name}</a>
+                        <p>${projects.description[0]}</p>
                     </div>
                 </div>`);
+                // Here we change counter so that card size changes every time loop runs
+                i % 2 === 0 ? counter += 2 : counter++;
             });
     });
 }
