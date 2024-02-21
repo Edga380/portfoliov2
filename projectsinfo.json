@@ -1,127 +1,244 @@
 [
-    {
-        "name": "Anime Production Agency",
-        "gitHubRepName": "Chibs-Eds-Agency",
-        "description": [
-            "Anime Production Agency is a distinguished company specializing in the creation of captivating anime series.",
-            "With a rich history spanning over 20 years, the agency", 
-            "has firmly established itself as a leading force in the anime industry. Renowned for",
-            "their commitment to storytelling excellence and top-notch animation, they have become",
-            "synonymous with quality and innovation.Earth needs more resources to sustain mankind.", 
-            "After finding a planet with"
-        ],
-        "links": [
-            ["GitHub Pages", "https://fac29b.github.io/Chibs-Eds-Agency/"],
-            ["GitHub Repository", "https://github.com/fac29b/Chibs-Eds-Agency"]
-        ],
-        "slideShowImg": [
-            ["./images/animeAgency/AnimeAgency01.png"],
-            ["./images/animeAgency/AnimeAgency02.png"],
-            ["./images/animeAgency/AnimeAgency03.png"],
-            ["./images/animeAgency/AnimeAgency04.png"],
-            ["./images/animeAgency/AnimeAgency05.png"],
-            ["./images/animeAgency/AnimeAgency06.png"]
-        ],
-        "tags":[
-            ["./images/technologiesicons/jsicon.png", "32.6"],
-            ["./images/technologiesicons/cssicon.png", "36.4"],
-            ["./images/technologiesicons/htmlicon.png", "31.0"]
-        ]
-    },
+  {
+    "name": "React to do list",
+    "gitHubRepName": "react-to-do-list",
+    "description": [
+      "This is a simple to-do list web application built with React, utilizing local storage for data persistence. ",
+      "The app allows users to manage their tasks efficiently by creating, editing, deleting, searching, and prioritizing tasks based on importance. ",
+      "Additionally, tasks can be sorted by completion status, importance, or date and time."
+    ],
+    "links": [
+      ["GitHub Repository", "https://github.com/Edga380/react-to-do-list"]
+    ],
+    "slideShowImg": [
+      ["./images/reactToDoList/react_to_do_list01.png"],
+      ["./images/reactToDoList/react_to_do_list02.png"],
+      ["./images/reactToDoList/react_to_do_list03.png"],
+      ["./images/reactToDoList/react_to_do_list04.png"],
+      ["./images/reactToDoList/react_to_do_list05.png"],
+      ["./images/reactToDoList/react_to_do_list06.png"],
+      ["./images/reactToDoList/react_to_do_list07.png"],
+      ["./images/reactToDoList/react_to_do_list08.png"]
+    ]
+  },
 
-    {
-        "name": "Strategy Game",
-        "gitHubRepName": "strategygame",
-        "description": [
-            "Earth needs more resources to sustain mankind. After finding a planet with a lot of it they think their problems are solved.", 
-            "While building a new base on the planet and harvesting its resources they encounter a species that have",
-            "been harvesting it too, so the fight for resources begins."
-        ],
-        "links": [
-            ["GitHub Pages", "https://edga380.github.io/strategygame/"],
-            ["GitHub Repository", "https://github.com/Edga380/strategygame"]
-        ],
-        "slideShowImg": [
-            ["./images/strategyGame/strategyGame01.png"],
-            ["./images/strategyGame/strategyGame02.png"],
-            ["./images/strategyGame/strategyGame03.png"],
-            ["./images/strategyGame/strategyGame04.png"]
-        ]
-    },
+  {
+    "name": "Simple blog website",
+    "gitHubRepName": "Josue-Fintan-Ed-sqlite-project",
+    "description": [
+      "This project showcases the practical application of SQLite, highlighting its functionality and effectiveness within a Node.js and Express.js environment."
+    ],
+    "links": [
+      [
+        "GitHub Repository",
+        "https://github.com/fac29b/Josue-Fintan-Ed-sqlite-project"
+      ]
+    ],
+    "slideShowImg": [
+      ["./images/simpleBlogWebsite/simple_blog_website01.png"],
+      ["./images/simpleBlogWebsite/simple_blog_website02.png"],
+      ["./images/simpleBlogWebsite/simple_blog_website03.png"],
+      ["./images/simpleBlogWebsite/simple_blog_website04.png"],
+      ["./images/simpleBlogWebsite/simple_blog_website05.png"]
+    ],
+    "tags": [
+      ["./images/technologiesicons/javascript_icon.png", "67.6"],
+      ["./images/technologiesicons/css_icon.png", "13.7"],
+      ["./images/technologiesicons/html_icon.png", "18.7"]
+    ]
+  },
 
-    {
-        "name": "Labyrinth2d",
-        "gitHubRepName": "labyrinth2d",
-        "description": [
-            "After developing 'Bubble Space Wars' I decided that I wanted to develop a game from scratch mostly using JavaScript to challenge myself rather than using Unity.",
-            "That is how Labyrinth2d came to life. Like the name suggests it is a labyrinth game where the goal is to ",
-            "pass 10 unique labyrinths in a total of 5 minutes time limit."
-        ],
-        "links": [
-            ["GitHub Pages", "https://edga380.github.io/labyrinth2d/"],
-            ["GitHub Repository", "https://github.com/Edga380/labyrinth2d"]
-        ],
-        "slideShowImg": [
-            ["./images/labyrinth2d/labyrinth2d01.png"],
-            ["./images/labyrinth2d/labyrinth2d02.png"],
-            ["./images/labyrinth2d/labyrinth2d03.png"],
-            ["./images/labyrinth2d/labyrinth2d04.png"]
-        ]
-    },
+  {
+    "name": "API-Driven Image Application",
+    "gitHubRepName": "Chris-and-Ed-Project3-API-calls",
+    "description": [
+      "This versatile Node.js and Express.js-based application harnesses the power of various APIs to offer a range of image-related functionalities."
+    ],
+    "links": [
+      [
+        "GitHub Repository",
+        "https://github.com/fac29b/Chris-and-Ed-Project3-API-calls"
+      ]
+    ],
+    "slideShowImg": [
+      ["./images/apimgWebsite/apimg_website01.png"],
+      ["./images/apimgWebsite/apimg_website02.png"],
+      ["./images/apimgWebsite/apimg_website03.png"],
+      ["./images/apimgWebsite/apimg_website04.png"],
+      ["./images/apimgWebsite/apimg_website05.png"]
+    ],
+    "tags": [
+      ["./images/technologiesicons/javascript_icon.png", "59.7"],
+      ["./images/technologiesicons/css_icon.png", "37.4"],
+      ["./images/technologiesicons/html_icon.png", "10.9"]
+    ]
+  },
 
-    {
-        "name": "Space Kitty Games",
-        "gitHubRepName": "hobbypage",
-        "description": [
-            "I independently worked on the website design/images/html/css/javascript and was able to learn the processes of how to put together a website.", 
-            "I developed this website to showcase my games and ",
-            "provide a snapshot of what the games look like."
-        ],
-        "links": [
-            ["GitHub Pages", "https://edga380.github.io/hobbypage/index.html"],
-            ["GitHub Repository", "https://github.com/Edga380/hobbypage"]
-        ],
-        "slideShowImg": [
-            ["./images/skGames/skGames01.png"],
-            ["./images/skGames/skGames02.png"],
-            ["./images/skGames/skGames03.png"],
-            ["./images/skGames/skGames04.png"]
-        ]
-    },
+  {
+    "name": "ChatGPT Clone Website",
+    "gitHubRepName": "Edgaras-ChatGPT-Clone",
+    "description": [
+      "This project is a ChatGPT clone website that utilises OpenAi api, AWS RDS.",
+      "It allows users to register, log in, and engage in conversations with a ChatGPT model.",
+      "User information and conversations are stored in a MySQL database that can be deleted by user."
+    ],
+    "links": [
+      ["GitHub Repository", "https://github.com/fac29b/Edgaras-ChatGPT-Clone"]
+    ],
+    "slideShowImg": [
+      ["./images/chatGPTCloneWebsite/chat_gpt_clone_website01.png"],
+      ["./images/chatGPTCloneWebsite/chat_gpt_clone_website02.png"],
+      ["./images/chatGPTCloneWebsite/chat_gpt_clone_website03.png"],
+      ["./images/chatGPTCloneWebsite/chat_gpt_clone_website04.png"],
+      ["./images/chatGPTCloneWebsite/chat_gpt_clone_website05.png"]
+    ],
+    "tags": [
+      ["./images/technologiesicons/ejs_icon.png", "69.1"],
+      ["./images/technologiesicons/css_icon.png", "18.7"],
+      ["./images/technologiesicons/html_icon.png", "12.2"]
+    ]
+  },
 
-    {
-        "name": "Gallery",
-        "gitHubRepName": "projectgallery",
-        "description": [
-            "This project displays images in an organized manner."
-        ],
-        "links": [
-            ["GitHub Pages", "https://edga380.github.io/projectgallery/"],
-            ["GitHub Repository", "https://github.com/Edga380/projectgallery"]
-        ],
-        "slideShowImg": [
-            ["./images/gallery/gallery01.png"],
-            ["./images/gallery/gallery02.png"],
-            ["./images/gallery/gallery03.png"],
-            ["./images/gallery/gallery04.png"]
-        ]
-    },
+  {
+    "name": "Desk pad picker",
+    "gitHubRepName": "desk-pad-picker",
+    "description": [
+      "Desk Pad Picker is a versatile tool designed for seamless integration into your website.",
+      "Empower your users to effortlessly select the perfect desk pad for their workspace, enhancing their overall desk experience."
+    ],
+    "links": [
+      ["GitHub Pages", "https://edga380.github.io/desk-pad-picker/"],
+      ["GitHub Repository", "https://github.com/Edga380/desk-pad-picker"]
+    ],
+    "slideShowImg": [
+      ["./images/deskPadPicker/desk_pad_picker01.png"],
+      ["./images/deskPadPicker/desk_pad_picker02.png"],
+      ["./images/deskPadPicker/desk_pad_picker03.png"],
+      ["./images/deskPadPicker/desk_pad_picker04.png"]
+    ]
+  },
 
-    {
-        "name": "Movie Data",
-        "gitHubRepName": "moviedata",
-        "description": [
-            "Movie data is automatically read by the code and displayed on the screen as a card."
-        ],
-        "links": [
-            ["GitHub Pages", "https://edga380.github.io/moviedata/"],
-            ["GitHub Repository", "https://github.com/Edga380/moviedata"]
-        ],
-        "slideShowImg": [
-            ["./images/movieData/movieData01.png"],
-            ["./images/movieData/movieData02.png"],
-            ["./images/movieData/movieData03.png"],
-            ["./images/movieData/movieData04.png"]
-        ]
-    }
+  {
+    "name": "Anime Production Agency",
+    "gitHubRepName": "Chibs-Eds-Agency",
+    "description": [
+      "Anime Production Agency is a distinguished company specializing in the creation of captivating anime series.",
+      "With a rich history spanning over 20 years, the agency",
+      "has firmly established itself as a leading force in the anime industry. Renowned for",
+      "their commitment to storytelling excellence and top-notch animation, they have become",
+      "synonymous with quality and innovation.Earth needs more resources to sustain mankind.",
+      "After finding a planet with"
+    ],
+    "links": [
+      ["GitHub Pages", "https://fac29b.github.io/Chibs-Eds-Agency/"],
+      ["GitHub Repository", "https://github.com/fac29b/Chibs-Eds-Agency"]
+    ],
+    "slideShowImg": [
+      ["./images/animeAgency/AnimeAgency01.png"],
+      ["./images/animeAgency/AnimeAgency02.png"],
+      ["./images/animeAgency/AnimeAgency03.png"],
+      ["./images/animeAgency/AnimeAgency04.png"],
+      ["./images/animeAgency/AnimeAgency05.png"],
+      ["./images/animeAgency/AnimeAgency06.png"]
+    ],
+    "tags": [
+      ["./images/technologiesicons/javascript_icon.png", "32.6"],
+      ["./images/technologiesicons/css_icon.png", "36.4"],
+      ["./images/technologiesicons/html_icon.png", "31.0"]
+    ]
+  },
+
+  {
+    "name": "Strategy Game",
+    "gitHubRepName": "strategygame",
+    "description": [
+      "Earth needs more resources to sustain mankind. After finding a planet with a lot of it they think their problems are solved.",
+      "While building a new base on the planet and harvesting its resources they encounter a species that have",
+      "been harvesting it too, so the fight for resources begins."
+    ],
+    "links": [
+      ["GitHub Pages", "https://edga380.github.io/strategygame/"],
+      ["GitHub Repository", "https://github.com/Edga380/strategygame"]
+    ],
+    "slideShowImg": [
+      ["./images/strategyGame/strategyGame01.png"],
+      ["./images/strategyGame/strategyGame02.png"],
+      ["./images/strategyGame/strategyGame03.png"],
+      ["./images/strategyGame/strategyGame04.png"]
+    ]
+  },
+
+  {
+    "name": "Labyrinth2d",
+    "gitHubRepName": "labyrinth2d",
+    "description": [
+      "After developing 'Bubble Space Wars' I decided that I wanted to develop a game from scratch mostly using JavaScript to challenge myself rather than using Unity.",
+      "That is how Labyrinth2d came to life. Like the name suggests it is a labyrinth game where the goal is to ",
+      "pass 10 unique labyrinths in a total of 5 minutes time limit."
+    ],
+    "links": [
+      ["GitHub Pages", "https://edga380.github.io/labyrinth2d/"],
+      ["GitHub Repository", "https://github.com/Edga380/labyrinth2d"]
+    ],
+    "slideShowImg": [
+      ["./images/labyrinth2d/labyrinth2d01.png"],
+      ["./images/labyrinth2d/labyrinth2d02.png"],
+      ["./images/labyrinth2d/labyrinth2d03.png"],
+      ["./images/labyrinth2d/labyrinth2d04.png"]
+    ]
+  },
+
+  {
+    "name": "Space Kitty Games",
+    "gitHubRepName": "hobbypage",
+    "description": [
+      "I independently worked on the website design/images/html/css/javascript and was able to learn the processes of how to put together a website.",
+      "I developed this website to showcase my games and ",
+      "provide a snapshot of what the games look like."
+    ],
+    "links": [
+      ["GitHub Pages", "https://edga380.github.io/hobbypage/index.html"],
+      ["GitHub Repository", "https://github.com/Edga380/hobbypage"]
+    ],
+    "slideShowImg": [
+      ["./images/skGames/skGames01.png"],
+      ["./images/skGames/skGames02.png"],
+      ["./images/skGames/skGames03.png"],
+      ["./images/skGames/skGames04.png"]
+    ]
+  },
+
+  {
+    "name": "Gallery",
+    "gitHubRepName": "projectgallery",
+    "description": ["This project displays images in an organized manner."],
+    "links": [
+      ["GitHub Pages", "https://edga380.github.io/projectgallery/"],
+      ["GitHub Repository", "https://github.com/Edga380/projectgallery"]
+    ],
+    "slideShowImg": [
+      ["./images/gallery/gallery01.png"],
+      ["./images/gallery/gallery02.png"],
+      ["./images/gallery/gallery03.png"],
+      ["./images/gallery/gallery04.png"]
+    ]
+  },
+
+  {
+    "name": "Movie Data",
+    "gitHubRepName": "moviedata",
+    "description": [
+      "Movie data is automatically read by the code and displayed on the screen as a card."
+    ],
+    "links": [
+      ["GitHub Pages", "https://edga380.github.io/moviedata/"],
+      ["GitHub Repository", "https://github.com/Edga380/moviedata"]
+    ],
+    "slideShowImg": [
+      ["./images/movieData/movieData01.png"],
+      ["./images/movieData/movieData02.png"],
+      ["./images/movieData/movieData03.png"],
+      ["./images/movieData/movieData04.png"]
+    ]
+  }
 ]
