@@ -158,7 +158,7 @@ ul {
 }
 
 header {
-  background-image: url("/images/headerbg.png");
+  background-image: url("../images/headerbg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -765,7 +765,7 @@ section {
   }
 
   .mob-dropdown-menu-container.open {
-    max-height: 800px;
+    max-height: 400px;
   }
 
   .mob-nav-cont-button {
@@ -790,7 +790,7 @@ section {
   .mob-sub-dropdown-menu {
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-y: scroll;
     position: relative;
     max-height: 0px;
     transition: max-height 0.5s ease;
