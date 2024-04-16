@@ -25,7 +25,6 @@ document.body.addEventListener("click", function (event) {
 
 // Next previous project
 function NextPreviousProject(num) {
-  console.log(parseInt(currentProjectIndex) + num);
   window.location.href = `./project.html?project=${
     parseInt(currentProjectIndex) + num
   }`;
@@ -33,10 +32,9 @@ function NextPreviousProject(num) {
 
 // Project page populate with information from json file
 let projectImages;
-// Check if html element exist
 function AddProjectInformation() {
+  // Check if html element exist
   if (document.getElementById("slideshow-container")) {
-    console.log(currentProjectIndex);
     fetch("./projectsinfo.json")
       .then((response) => response.json())
       .then((data) => {
@@ -259,16 +257,16 @@ mobProjectsButton.addEventListener("click", function () {
 fetch("./projectsinfo.json")
   .then((response) => response.json())
   .then((data) => {
-    data.forEach((names, i) => {
+    data.forEach((project) => {
       subDropdownMenu.insertAdjacentHTML(
         "beforeend",
         `
-            <a href="./project.html?project=${i}">${names.name}</a>`
+            <a href="./project.html?project=${project.href}">${project.name}</a>`
       );
       document.querySelector(".dropdown-menu-container").insertAdjacentHTML(
         "beforeend",
         `
-            <a href="./project.html?project=${i}">${names.name}</a>`
+            <a href="./project.html?project=${project.href}">${project.name}</a>`
       );
     });
   });
@@ -301,7 +299,7 @@ if (cardContainer) {
           }">
                     </div>
                     <div class="card-content">
-                        <a href="./project.html?project=${i}">${
+                        <a href="./project.html?project=${projects.href}">${
             projects.name
           }</a>
                         <p>${projects.description[0]}</p>

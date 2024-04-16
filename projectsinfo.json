@@ -1,5 +1,32 @@
 [
   {
+    "href": "media-tracking-website",
+    "name": "Media Tracking Website",
+    "gitHubRepName": "media-tracking-website",
+    "description": [
+      "The primary objective of this website is to gain a deeper understanding of authentication mechanisms and the implementation of user cookies. ",
+      "Upon a user's login, a session cookie is generated with a unique identifier to facilitate their interaction with the site. ",
+      "Additionally, a unique identifier that was assigned to each user is stored in the website's database. ",
+      "This unique identifier serves as a reference point for identifying users and managing their sessions. ",
+      "As a result, users experience seamless automatic login, triggered by the verification of their unique identifier in the database."
+    ],
+    "links": [
+      [
+        "GitHub Repository",
+        "https://github.com/Edga380/media-tracking-website.git"
+      ]
+    ],
+    "slideShowImg": [
+      ["./images/mediaTrackingWebsite/media_tracking_website01.png"],
+      ["./images/mediaTrackingWebsite/media_tracking_website02.png"],
+      ["./images/mediaTrackingWebsite/media_tracking_website03.png"],
+      ["./images/mediaTrackingWebsite/media_tracking_website04.png"],
+      ["./images/mediaTrackingWebsite/media_tracking_website05.png"],
+      ["./images/mediaTrackingWebsite/media_tracking_website06.png"]
+    ]
+  },
+  {
+    "href": "react-to-do-list",
     "name": "React to do list",
     "gitHubRepName": "react-to-do-list",
     "description": [
@@ -23,6 +50,7 @@
   },
 
   {
+    "href": "simple-blog-website",
     "name": "Simple blog website",
     "gitHubRepName": "Josue-Fintan-Ed-sqlite-project",
     "description": [
@@ -49,6 +77,7 @@
   },
 
   {
+    "href": "api-driven-image-application",
     "name": "API-Driven Image Application",
     "gitHubRepName": "Chris-and-Ed-Project3-API-calls",
     "description": [
@@ -75,6 +104,7 @@
   },
 
   {
+    "href": "chatgpt-clone-website",
     "name": "ChatGPT Clone Website",
     "gitHubRepName": "Edgaras-ChatGPT-Clone",
     "description": [
@@ -100,6 +130,7 @@
   },
 
   {
+    "href": "desk-pad-picker",
     "name": "Desk pad picker",
     "gitHubRepName": "desk-pad-picker",
     "description": [
@@ -119,6 +150,7 @@
   },
 
   {
+    "href": "anime-production-agency",
     "name": "Anime Production Agency",
     "gitHubRepName": "Chibs-Eds-Agency",
     "description": [
@@ -149,6 +181,7 @@
   },
 
   {
+    "href": "strategy-game",
     "name": "Strategy Game",
     "gitHubRepName": "strategygame",
     "description": [
@@ -169,6 +202,7 @@
   },
 
   {
+    "href": "labyrinth2d",
     "name": "Labyrinth2d",
     "gitHubRepName": "labyrinth2d",
     "description": [
@@ -189,6 +223,7 @@
   },
 
   {
+    "href": "space-kitty-games",
     "name": "Space Kitty Games",
     "gitHubRepName": "hobbypage",
     "description": [
@@ -209,6 +244,7 @@
   },
 
   {
+    "href": "gallery",
     "name": "Gallery",
     "gitHubRepName": "projectgallery",
     "description": ["This project displays images in an organized manner."],
@@ -225,6 +261,7 @@
   },
 
   {
+    "href": "movie-data",
     "name": "Movie Data",
     "gitHubRepName": "moviedata",
     "description": [
