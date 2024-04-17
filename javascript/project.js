@@ -1,4 +1,5 @@
 let currentProjectIndex;
+let storedProjectsData;
 
 window.onload = () => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -7,6 +8,7 @@ window.onload = () => {
   fetch("./projectsinfo.json")
     .then((response) => response.json())
     .then((projectData) => {
+      storedProjectsData = projectData;
       projectData.map((project, i) => {
         if (project.href === projectUrl) {
           currentProjectIndex = i;

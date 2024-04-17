@@ -26,7 +26,7 @@ document.body.addEventListener("click", function (event) {
 // Next previous project
 function NextPreviousProject(num) {
   window.location.href = `./project.html?project=${
-    parseInt(currentProjectIndex) + num
+    storedProjectsData[currentProjectIndex + num].href
   }`;
 }
 
