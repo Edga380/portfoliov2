@@ -281,8 +281,12 @@ if (cardContainer) {
       let counter = 0;
       // For loop to insert html elements
       data.forEach((projects, i) => {
-        // Check if you are on /index.html page if yes limit projects that being shown to 4
-        if (window.location.pathname.endsWith("/index.html") && i > 3) {
+        // Check if you are on /index.html page if yes limit projects to 4
+        const pageUrl = window.location.pathname;
+        if (
+          (pageUrl.endsWith("/index.html") && i > 3) ||
+          (pageUrl.endsWith("/") && i > 3)
+        ) {
           return;
         }
         cardContainer.insertAdjacentHTML(
