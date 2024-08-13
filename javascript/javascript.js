@@ -23,6 +23,108 @@ document.body.addEventListener("click", function (event) {
   }
 });
 
+const codeColours = {
+  HTML: "rgb(175, 0, 0)",
+  CSS: "rgb(48, 0, 90)",
+  JavaScript: "rgb(240, 216, 0)",
+  TypeScript: "rgb(0, 130, 205)",
+  default: "rgb(112, 35, 205)",
+};
+
+let cachedLanguagesData = null;
+
+async function fetchReposInformation() {
+  if (cachedLanguagesData) {
+    console.log("Using cached data");
+    displayMostUsedLanguagesChart(cachedLanguagesData);
+    return;
+  }
+
+  const languages = {};
+
+  try {
+    const repos = await fetchGitHubRepos();
+    await fetchLanguagesForRepos(repos, languages);
+    cachedLanguagesData = languages;
+    displayMostUsedLanguagesChart(languages);
+  } catch (error) {
+    const skeletonElement = document.getElementById("skeleton-languages-table");
+    skeletonElement.style.display = "none";
+    const errorElement = document.getElementById("error-languages-table");
+    errorElement.style.display = "flex";
+    console.error("There was a problem with the fetch operation:", error);
+  }
+}
+
+async function fetchGitHubRepos() {
+  const response = await fetch("https://api.github.com/users/Edga380/repos");
+  if (!response.ok) throw new Error("Failed to fetch repositories");
+  return response.json();
+}
+
+async function fetchLanguagesForRepos(repos, languages) {
+  for (const repo of repos) {
+    try {
+      const languagesData = await fetchLanguages(repo.languages_url);
+      updateLanguagesData(languages, languagesData);
+    } catch (error) {
+      console.error(`Error fetchin languages for repo ${repo.name}: `, error);
+    }
+  }
+}
+
+async function fetchLanguages(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error("Failed to fetch languages.");
+  return response.json();
+}
+
+function updateLanguagesData(languages, languagesData) {
+  for (const [language, value] of Object.entries(languagesData)) {
+    languages[language] = (languages[language] || 0) + value;
+  }
+}
+
+function displayMostUsedLanguagesChart(languages) {
+  const mostUsedLanguages = document.getElementById("most-used-languages");
+  mostUsedLanguages.innerHTML = `
+    <div id="languages-table">
+      <a class="languages-header-text">Most used languages</a>
+    </div>
+    `;
+
+  const languagesTable = document.getElementById("languages-table");
+  const total = Object.values(languages).reduce((acc, value) => acc + value, 0);
+  const languageEntries = Object.entries(languages)
+    .map(([language, value]) => ({
+      language,
+      percentage: calculatePercentage(value, total).toFixed(1),
+    }))
+    .filter(({ percentage }) => percentage >= 3);
+
+  let html = "";
+  for (const { language, percentage } of languageEntries) {
+    html = `
+      <div class="languages-background" style="background-color: ${
+        codeColours[language] || codeColours.default
+      }; width: ${percentage}%;">
+          <a class="languages-procentage-text"></a>
+      </div>
+          <a class="languages-text">${language} ${percentage}%</a>
+    `;
+    languagesTable.insertAdjacentHTML("beforeend", html);
+  }
+  disableSkeletonAnimation("skeleton-languages-table");
+}
+
+function disableSkeletonAnimation(elementId) {
+  if (!document.getElementById(elementId)) return;
+  const element = document.getElementById(elementId);
+  element.style.display = "none";
+}
+
+fetchReposInformation();
+
 // Next previous project
 function NextPreviousProject(num) {
   window.location.href = `./project.html?project=${
@@ -155,7 +257,7 @@ function AddProjectInformation() {
                 `
                 <div class="tag">
                     <img src="${tag[0]}">
-                    <p>${CalculatePercentage(tag[1], total).toFixed(1)}%</p>
+                    <p>${calculatePercentage(tag[1], total).toFixed(1)}%</p>
                 </div>`
               );
             });
@@ -177,7 +279,7 @@ function AddProjectInformation() {
 }
 
 // Calculate %
-function CalculatePercentage(individualValue, total) {
+function calculatePercentage(individualValue, total) {
   return (individualValue / total) * 100;
 }
 
