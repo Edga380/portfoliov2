@@ -87,6 +87,8 @@ function updateLanguagesData(languages, languagesData) {
 
 function displayMostUsedLanguagesChart(languages) {
   const mostUsedLanguages = document.getElementById("most-used-languages");
+
+  if (!mostUsedLanguages) return;
   mostUsedLanguages.innerHTML = `
     <div id="languages-table">
       <a class="languages-header-text">Most used languages</a>
