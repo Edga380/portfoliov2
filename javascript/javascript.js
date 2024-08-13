@@ -31,21 +31,21 @@ const codeColours = {
   default: "rgb(112, 35, 205)",
 };
 
-let cachedLanguagesData = null;
+let SESSION_STORAGE_KEY = "cachedLanguagesData";
 
 async function fetchReposInformation() {
-  if (cachedLanguagesData) {
-    console.log("Using cached data");
-    displayMostUsedLanguagesChart(cachedLanguagesData);
+  let cachedData = sessionStorage.getItem(SESSION_STORAGE_KEY);
+  if (cachedData) {
+    console.log("Using cached data from Session Storage");
+    displayMostUsedLanguagesChart(JSON.parse(cachedData));
     return;
   }
 
   const languages = {};
-
   try {
     const repos = await fetchGitHubRepos();
     await fetchLanguagesForRepos(repos, languages);
-    cachedLanguagesData = languages;
+    sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(languages));
     displayMostUsedLanguagesChart(languages);
   } catch (error) {
     const skeletonElement = document.getElementById("skeleton-languages-table");
