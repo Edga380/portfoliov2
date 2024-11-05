@@ -177,22 +177,14 @@ header {
   display: flex;
 }
 
-.header-left {
-  width: 50%;
-  max-height: inherit;
-}
-
-.header-left h1 {
+.header-container h1 {
   color: var(--highlights);
-  width: 70%;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 100px;
+  font-size: 80px;
+  text-align: center;
   text-decoration: none;
 }
 
-.header-left p {
+.header-container p {
   width: 90%;
   position: relative;
   left: 50%;
@@ -200,7 +192,7 @@ header {
   margin-bottom: 50px;
 }
 
-.header-left-buttons {
+.header-buttons {
   width: 90%;
   position: relative;
   left: 50%;
@@ -209,7 +201,7 @@ header {
   margin-bottom: 50px;
 }
 
-.header-left-button {
+.header-button {
   background-color: var(--burgandy-buttons);
   margin: 5px;
   border-radius: 5px;
@@ -218,26 +210,9 @@ header {
   text-decoration: none;
 }
 
-.header-left-button:hover {
+.header-button:hover {
   background-color: var(--highlights);
   cursor: pointer;
-}
-
-.header-right {
-  width: 50%;
-  max-height: 550px;
-}
-
-.header-right img {
-  max-height: 90%;
-  position: relative;
-  top: 5%;
-  left: 20%;
-  transition: scale 0.3s ease;
-}
-
-.header-right img:hover {
-  scale: 1.05;
 }
 
 #about-me {
@@ -1008,17 +983,17 @@ section {
     transform: translate(-50%);
   }
 
-  .mob-header-left {
+  .mob-header {
     width: 100%;
   }
 
-  .mob-header-left h1 {
+  .mob-header h1 {
     text-align: center;
     text-decoration: none;
     font-size: 40px;
   }
 
-  .mob-header-left p {
+  .mob-header p {
     padding: 0px 50px 50px 50px;
   }
 

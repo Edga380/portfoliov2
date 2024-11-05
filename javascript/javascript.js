@@ -235,6 +235,12 @@ function AddProjectInformation() {
                 gitHubData.JavaScript,
               ]);
             }
+            if ("TypeScript" in gitHubData) {
+              gitHubTechTags.push([
+                "./images/technologiesicons/typescript_icon.png",
+                gitHubData.TypeScript,
+              ]);
+            }
             if ("CSS" in gitHubData) {
               gitHubTechTags.push([
                 "./images/technologiesicons/css_icon.png",

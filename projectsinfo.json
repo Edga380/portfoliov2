@@ -1,5 +1,47 @@
 [
   {
+    "href": "shopping-website",
+    "name": "Shopping Website",
+    "gitHubRepName": "shopping-website",
+    "description": [
+      "Shopping website for displaying and managing products on the website using admin panel."
+    ],
+    "links": [
+      ["GitHub Repository", "https://github.com/Edga380/shopping-website"]
+    ],
+    "slideShowImg": [
+      ["./images/shoppingWebsite/shopping_website_01.png"],
+      ["./images/shoppingWebsite/shopping_website_02.png"],
+      ["./images/shoppingWebsite/shopping_website_03.png"],
+      ["./images/shoppingWebsite/shopping_website_04.png"],
+      ["./images/shoppingWebsite/shopping_website_05.png"],
+      ["./images/shoppingWebsite/shopping_website_06.png"],
+      ["./images/shoppingWebsite/shopping_website_07.png"],
+      ["./images/shoppingWebsite/shopping_website_08.png"],
+      ["./images/shoppingWebsite/shopping_website_09.png"],
+      ["./images/shoppingWebsite/shopping_website_10.png"],
+      ["./images/shoppingWebsite/shopping_website_11.png"],
+      ["./images/shoppingWebsite/shopping_website_12.png"],
+      ["./images/shoppingWebsite/shopping_website_13.png"],
+      ["./images/shoppingWebsite/shopping_website_14.png"],
+      ["./images/shoppingWebsite/shopping_website_15.png"],
+      ["./images/shoppingWebsite/shopping_website_16.png"],
+      ["./images/shoppingWebsite/shopping_website_17.png"],
+      ["./images/shoppingWebsite/shopping_website_18.png"],
+      ["./images/shoppingWebsite/shopping_website_19.png"],
+      ["./images/shoppingWebsite/shopping_website_20.png"],
+      ["./images/shoppingWebsite/shopping_website_21.png"],
+      ["./images/shoppingWebsite/shopping_website_22.png"],
+      ["./images/shoppingWebsite/shopping_website_23.png"],
+      ["./images/shoppingWebsite/shopping_website_24.png"],
+      ["./images/shoppingWebsite/shopping_website_25.png"],
+      ["./images/shoppingWebsite/shopping_website_26.png"],
+      ["./images/shoppingWebsite/shopping_website_27.png"],
+      ["./images/shoppingWebsite/shopping_website_28.png"],
+      ["./images/shoppingWebsite/shopping_website_29.png"]
+    ]
+  },
+  {
     "href": "media-tracking-website",
     "name": "Media Tracking Website",
     "gitHubRepName": "media-tracking-website",
