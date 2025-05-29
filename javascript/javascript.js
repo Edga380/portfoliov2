@@ -408,9 +408,10 @@ if (cardContainer) {
                     : "small-project-card"
                 }">
                     <div class="image-container">
+                      <a href="./project.html?project=${projects.href}">
                         <img src="${projects.slideShowImg[0]}" alt="${
-            projects.name
-          }">
+                        projects.name}">
+                      </a>
                     </div>
                     <div class="card-content">
                         <a href="./project.html?project=${projects.href}">${
