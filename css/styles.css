@@ -272,6 +272,20 @@ header {
   border: dashed 2px var(--highlights);
 }
 
+.used-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+}
+
+.used-technologies img {
+  max-width: 3rem;
+  max-height: 3rem;
+  border-radius: 0.8rem;
+  border: dashed 2px var(--highlights);
+  margin: 0.2rem;
+}
+
 .about-me-left {
   width: 50%;
 }

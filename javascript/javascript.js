@@ -390,7 +390,7 @@ if (cardContainer) {
       // Counter for changing card size
       let counter = 0;
       // For loop to insert html elements
-      data.forEach((projects, i) => {
+      data.forEach((projectData, i) => {
         // Check if you are on /index.html page if yes limit projects to 4
         const pageUrl = window.location.pathname;
         if (
@@ -399,6 +399,10 @@ if (cardContainer) {
         ) {
           return;
         }
+        let usedTechnologies = "";
+        projectData.usedTechnologies.forEach((technology) => {
+          usedTechnologies += `<img src="${technology}" alt="${projectData.name}">`;
+        })
         cardContainer.insertAdjacentHTML(
           "beforeend",
           `
@@ -408,16 +412,19 @@ if (cardContainer) {
                     : "small-project-card"
                 }">
                     <div class="image-container">
-                      <a href="./project.html?project=${projects.href}">
-                        <img src="${projects.slideShowImg[0]}" alt="${
-                        projects.name}">
+                      <a href="./project.html?project=${projectData.href}">
+                        <img src="${projectData.slideShowImg[0]}" alt="${
+                        projectData.name}">
                       </a>
                     </div>
                     <div class="card-content">
-                        <a href="./project.html?project=${projects.href}">${
-            projects.name
-          }</a>
-                        <p>${projects.description[0]}</p>
+                        <div class="used-technologies">
+                          ${usedTechnologies}
+                        </div>
+                        <a href="./project.html?project=${projectData.href}">${
+                        projectData.name
+                        }</a>
+                        <p>${projectData.description[0]}</p>
                     </div>
                 </div>`
         );
