@@ -91,7 +91,8 @@ ul {
 }
 
 .nav-cont-button {
-  margin: 0 50px;
+  position: relative;
+  padding: 0 50px;
 }
 
 .nav-cont-button a {
@@ -104,6 +105,57 @@ ul {
   cursor: pointer;
 }
 
+.desktop-arrow {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem;
+}
+
+.desktop-arrow-line:nth-child(1) {
+  background-color: var(--text);
+  position: absolute;
+  top: -3px;
+  width: 10px;
+  height: 2px;
+  transform: rotate(-135deg);
+  transition: transform 0.3s ease;
+}
+
+.desktop-arrow-line:nth-child(2) {
+  background-color: var(--text);
+  position: absolute;
+  top: -3px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  transform: rotate(135deg);
+  transition: transform 0.3s ease;
+}
+
+.desktop-arrow-line:nth-child(1).open {
+  transform: rotate(-45deg);
+}
+
+.desktop-arrow-line:nth-child(2).open {
+  transform: rotate(45deg);
+}
+
+.nav-cont-button:hover .desktop-arrow-line:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.nav-cont-button:hover .desktop-arrow-line:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.nav-cont-button:focus .desktop-arrow-line:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.nav-cont-button:focus .desktop-arrow-line:nth-child(2) {
+  transform: rotate(45deg);
+}
+
 .dropdown-menu-container {
   background-color: var(--section-background-color);
   display: flex;
@@ -111,11 +163,11 @@ ul {
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
   position: absolute;
+  left: -25%;
   overflow: hidden;
   overflow-y: scroll;
   margin-top: 1px;
-  margin-left: -85px;
-  max-width: auto;
+  width: max-content;
   z-index: 10;
   line-height: 20px;
 }
@@ -994,7 +1046,7 @@ section {
     top: -12px;
     width: 10px;
     height: 2px;
-    transform: rotate(135deg);
+    transform: rotate(-135deg);
     transition: transform 0.3s ease;
   }
 
@@ -1005,16 +1057,16 @@ section {
     left: 6px;
     width: 10px;
     height: 2px;
-    transform: rotate(-135deg);
+    transform: rotate(135deg);
     transition: transform 0.3s ease;
   }
 
   .mob-arrow-line:nth-child(1).open {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
 
   .mob-arrow-line:nth-child(2).open {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
 
   .desktop-header {

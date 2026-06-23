@@ -363,7 +363,7 @@ mobProjectsButton.addEventListener("click", function () {
   subDropdownMenu.classList.toggle("open");
 });
 
-// Populate mobile dropdown menu with projects from json file
+// Populate mobile/desktop dropdown menu with projects from json file
 fetch("./projectsinfo.json")
   .then((response) => response.json())
   .then((data) => {
