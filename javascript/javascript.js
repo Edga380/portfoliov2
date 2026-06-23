@@ -149,7 +149,7 @@ function AddProjectInformation() {
             `
             <img class="my-slide-image ${
               image === 0 ? "active" : ""
-            }" src="${image}">`
+            }" src="${image}">`,
           );
         });
         //
@@ -170,7 +170,7 @@ function AddProjectInformation() {
             `
                 <ul>
                     <a href="${link[1]}" target="_blank">${link[0]}</a>
-                </ul>`
+                </ul>`,
           );
         });
         // Insert next/previous buttons
@@ -179,27 +179,27 @@ function AddProjectInformation() {
             .getElementById("project-next-prev-container")
             .insertAdjacentHTML(
               "afterbegin",
-              '<a onclick="NextPreviousProject(1)">Next</a>'
+              '<a onclick="NextPreviousProject(1)">Next</a>',
             );
           document
             .getElementById("project-next-prev-container")
             .insertAdjacentHTML(
               "afterbegin",
-              '<a onclick="NextPreviousProject(-1)">Previous</a>'
+              '<a onclick="NextPreviousProject(-1)">Previous</a>',
             );
         } else if (currentProjectIndex == 0) {
           document
             .getElementById("project-next-prev-container")
             .insertAdjacentHTML(
               "afterbegin",
-              '<a onclick="NextPreviousProject(1)">Next</a>'
+              '<a onclick="NextPreviousProject(1)">Next</a>',
             );
         } else if (currentProjectIndex == data.length - 1) {
           document
             .getElementById("project-next-prev-container")
             .insertAdjacentHTML(
               "afterbegin",
-              '<a onclick="NextPreviousProject(-1)">Previous</a>'
+              '<a onclick="NextPreviousProject(-1)">Previous</a>',
             );
         }
         showSlides();
@@ -217,12 +217,12 @@ function AddProjectInformation() {
         fetch(
           "https://api.github.com/repos/Edga380/" +
             data[currentProjectIndex].gitHubRepName +
-            "/languages"
+            "/languages",
         )
           .then((gitHubResponse) => {
             if (!gitHubResponse.ok) {
               throw new Error(
-                `GitHub API request failed with status: ${gitHubResponse.status}`
+                `GitHub API request failed with status: ${gitHubResponse.status}`,
               );
             }
             return gitHubResponse.json();
@@ -256,7 +256,7 @@ function AddProjectInformation() {
             //Calculate total JS/CSS/HTML etc...
             const total = gitHubTechTags.reduce(
               (sum, array) => sum + array[1],
-              0
+              0,
             );
             // Insert html with tags
             gitHubTechTags.forEach((tag) => {
@@ -266,7 +266,7 @@ function AddProjectInformation() {
                 <div class="tag">
                     <img src="${tag[0]}">
                     <p>${calculatePercentage(tag[1], total).toFixed(1)}%</p>
-                </div>`
+                </div>`,
               );
             });
           })
@@ -278,7 +278,7 @@ function AddProjectInformation() {
                 <div class="tag">
                     <img src="${tag[0]}">
                     <p>${tag[1]}%</p>
-                </div>`
+                </div>`,
               );
             });
           });
@@ -371,12 +371,12 @@ fetch("./projectsinfo.json")
       subDropdownMenu.insertAdjacentHTML(
         "beforeend",
         `
-            <a href="./project.html?project=${project.href}">${project.name}</a>`
+            <a href="./project.html?project=${project.href}">${project.name}</a>`,
       );
       document.querySelector(".dropdown-menu-container").insertAdjacentHTML(
         "beforeend",
         `
-            <a href="./project.html?project=${project.href}">${project.name}</a>`
+            <a href="./project.html?project=${project.href}">${project.name}</a>`,
       );
     });
   });
@@ -402,31 +402,32 @@ if (cardContainer) {
         let usedTechnologies = "";
         projectData.usedTechnologies.forEach((technology) => {
           usedTechnologies += `<img src="${technology}" alt="${projectData.name}">`;
-        })
+        });
         cardContainer.insertAdjacentHTML(
           "beforeend",
           `
-                <div class="card ${
-                  (i + counter) % 2 === 0
-                    ? "large-project-card"
-                    : "small-project-card"
-                }">
-                    <div class="image-container">
-                      <a href="./project.html?project=${projectData.href}">
-                        <img src="${projectData.slideShowImg[0]}" alt="${
-                        projectData.name}">
-                      </a>
-                    </div>
-                    <div class="card-content">
-                        <div class="used-technologies">
-                          ${usedTechnologies}
-                        </div>
-                        <a href="./project.html?project=${projectData.href}">${
-                        projectData.name
-                        }</a>
-                        <p>${projectData.description[0]}</p>
-                    </div>
-                </div>`
+          <div class="card ${
+            (i + counter) % 2 === 0
+              ? "large-project-card"
+              : "small-project-card"
+          }">
+              <div class="image-container">
+                <a href="./project.html?project=${projectData.href}">
+                  <img src="${projectData.slideShowImg[0]}" alt="${
+                    projectData.name
+                  }">
+                </a>
+              </div>
+              <div class="card-content">
+                  <div class="used-technologies">
+                    ${usedTechnologies}
+                  </div>
+                  <a href="./project.html?project=${projectData.href}">${
+                    projectData.name
+                  }</a>
+                  <p>${projectData.description[0]}</p>
+              </div>
+          </div>`,
         );
         // Here we change counter so that card size changes every time loop runs
         i % 2 === 0 ? (counter += 2) : counter++;

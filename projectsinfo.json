@@ -9,7 +9,11 @@
     "links": [
       ["GitHub Repository", "https://github.com/Edga380/shopping-website"]
     ],
-    "usedTechnologies": ["./images/skills/nextjs.png", "./images/skills/sql.png", "./images/skills/tailwindcss.png"],
+    "usedTechnologies": [
+      "./images/skills/nextjs.png",
+      "./images/skills/sql.png",
+      "./images/skills/tailwindcss.png"
+    ],
     "slideShowImg": [
       ["./images/shoppingWebsite/shopping_website_01.png"],
       ["./images/shoppingWebsite/shopping_website_02.png"],
@@ -59,7 +63,11 @@
         "https://github.com/Edga380/media-tracking-website.git"
       ]
     ],
-    "usedTechnologies": ["./images/skills/reactjs.png", "./images/skills/expressjs.png", "./images/skills/sql.png"],
+    "usedTechnologies": [
+      "./images/skills/reactjs.png",
+      "./images/skills/expressjs.png",
+      "./images/skills/sql.png"
+    ],
     "slideShowImg": [
       ["./images/mediaTrackingWebsite/media_tracking_website01.png"],
       ["./images/mediaTrackingWebsite/media_tracking_website02.png"],
@@ -107,7 +115,11 @@
         "https://github.com/fac29b/Josue-Fintan-Ed-sqlite-project"
       ]
     ],
-    "usedTechnologies": ["./images/skills/nodejs.png", "./images/skills/expressjs.png", "./images/skills/sql.png"],
+    "usedTechnologies": [
+      "./images/skills/nodejs.png",
+      "./images/skills/expressjs.png",
+      "./images/skills/sql.png"
+    ],
     "slideShowImg": [
       ["./images/simpleBlogWebsite/simple_blog_website01.png"],
       ["./images/simpleBlogWebsite/simple_blog_website02.png"],
@@ -135,7 +147,12 @@
         "https://github.com/fac29b/Chris-and-Ed-Project3-API-calls"
       ]
     ],
-    "usedTechnologies": ["./images/skills/nodejs.png", "./images/skills/expressjs.png", "./images/skills/openAI.png", "./images/skills/aws.png"],
+    "usedTechnologies": [
+      "./images/skills/nodejs.png",
+      "./images/skills/expressjs.png",
+      "./images/skills/openAI.png",
+      "./images/skills/aws.png"
+    ],
     "slideShowImg": [
       ["./images/apimgWebsite/apimg_website01.png"],
       ["./images/apimgWebsite/apimg_website02.png"],
@@ -162,7 +179,12 @@
     "links": [
       ["GitHub Repository", "https://github.com/fac29b/Edgaras-ChatGPT-Clone"]
     ],
-    "usedTechnologies": ["./images/skills/openAI.png", "./images/skills/html.png", "./images/skills/css.png", "./images/skills/expressjs.png"],
+    "usedTechnologies": [
+      "./images/skills/openAI.png",
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/expressjs.png"
+    ],
     "slideShowImg": [
       ["./images/chatGPTCloneWebsite/chat_gpt_clone_website01.png"],
       ["./images/chatGPTCloneWebsite/chat_gpt_clone_website02.png"],
@@ -189,7 +211,11 @@
       ["GitHub Pages", "https://edga380.github.io/desk-pad-picker/"],
       ["GitHub Repository", "https://github.com/Edga380/desk-pad-picker"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/deskPadPicker/desk_pad_picker01.png"],
       ["./images/deskPadPicker/desk_pad_picker02.png"],
@@ -214,7 +240,11 @@
       ["GitHub Pages", "https://fac29b.github.io/Chibs-Eds-Agency/"],
       ["GitHub Repository", "https://github.com/fac29b/Chibs-Eds-Agency"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/animeAgency/AnimeAgency01.png"],
       ["./images/animeAgency/AnimeAgency02.png"],
@@ -243,7 +273,11 @@
       ["GitHub Pages", "https://edga380.github.io/strategygame/"],
       ["GitHub Repository", "https://github.com/Edga380/strategygame"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/strategyGame/strategyGame01.png"],
       ["./images/strategyGame/strategyGame02.png"],
@@ -265,7 +299,11 @@
       ["GitHub Pages", "https://edga380.github.io/labyrinth2d/"],
       ["GitHub Repository", "https://github.com/Edga380/labyrinth2d"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/labyrinth2d/labyrinth2d01.png"],
       ["./images/labyrinth2d/labyrinth2d02.png"],
@@ -287,7 +325,11 @@
       ["GitHub Pages", "https://edga380.github.io/hobbypage/index.html"],
       ["GitHub Repository", "https://github.com/Edga380/hobbypage"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/skGames/skGames01.png"],
       ["./images/skGames/skGames02.png"],
@@ -305,7 +347,11 @@
       ["GitHub Pages", "https://edga380.github.io/projectgallery/"],
       ["GitHub Repository", "https://github.com/Edga380/projectgallery"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/gallery/gallery01.png"],
       ["./images/gallery/gallery02.png"],
@@ -325,7 +371,11 @@
       ["GitHub Pages", "https://edga380.github.io/moviedata/"],
       ["GitHub Repository", "https://github.com/Edga380/moviedata"]
     ],
-    "usedTechnologies": ["./images/skills/html.png", "./images/skills/css.png", "./images/skills/javascript.png"],
+    "usedTechnologies": [
+      "./images/skills/html.png",
+      "./images/skills/css.png",
+      "./images/skills/javascript.png"
+    ],
     "slideShowImg": [
       ["./images/movieData/movieData01.png"],
       ["./images/movieData/movieData02.png"],
